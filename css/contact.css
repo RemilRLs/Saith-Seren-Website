@@ -1,0 +1,209 @@
+.contact .max-width{
+    
+    width: 100%;
+}
+
+
+.contact .contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 840px;
+    width: 100%;
+    background:#8B8A8A;
+}
+
+.contact .contact-content .contact-square{
+    height: 664px;
+    width: 861px;
+
+}
+
+.contact .contact-content .contact-square .contact-address-information-square{
+    display: block;
+    width: 100%;
+
+}
+
+.contact .contact-content .contact-square .contact-address-information-square h1{
+    color: white;
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address{
+    display: flex;
+    margin-top: 38px;
+    width: 842px;
+    height: 151px;
+    padding: 20px;
+
+    background-color: white;
+}
+
+.contact .contact-content .contact-square .contact-other-information{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.contact .contact-content .contact-square .contact-other-information .opening-time-information{
+    position: relative;
+    margin-top: 39px;
+    display: flex;
+
+    width: 618px;
+    height: 416px;
+
+}
+
+
+.contact .contact-content .contact-square .contact-other-information .map-interaction{
+    width: 284px;
+    height: 416px;
+
+    margin-top: 39px;
+    margin-left: 64px;
+    background-color: white;
+    margin-right: 18px;
+    border-radius: 20px;
+}
+
+
+.contact .contact-content .contact-square .contact-other-information .contact-social-media{
+    position: absolute;
+    width: 488px;
+    height: 105px;
+    margin-top: 47px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.contact .contact-content .contact-square .contact-other-information .opening-time-information .opening-time{
+
+    width: 496px;
+    height: 288px;
+
+    background-color:  white;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Contact Address Styling. */
+
+
+/* Address Styling. */
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .address{
+    width: 50%;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .address h3{
+    color: #D70000;
+    font-size: 24;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .address p{
+    margin-top: 5px;
+    font-size: 20px;
+    color: black;
+}
+
+/* Number Contact Styling. */
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email{
+    display: block;
+    width: 50%;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .number{
+    display: flex;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email p {
+    font-size: 20px;
+    color: black;
+}
+
+
+/* Email Contact Styling. */
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .email{
+    margin-top: 31px;
+    display: flex;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .email img{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .email p{
+    font-size: 20px;
+    color: black;  
+}
+
+.contact .contact-content .contact-square .contact-address-information-square .contact-address .icon-localisation img{
+    width: 109px;
+    height: 109px;
+}
+
+
+/* Styling Opening Time. */
+
+.contact .contact-content .contact-square .contact-other-information .opening-time{
+
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact .contact-content .contact-square .contact-other-information .opening-time h2{
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+
+    margin-bottom: 60px;
+    margin-top: 50px;
+}
+
+
+.contact .contact-content .contact-square .contact-other-information .opening-time p{
+    font-size: 20px;
+    color: black;
+}
+
+
+/* Styling Social Media Display. */
+
+.contact .contact-content .contact-square .contact-other-information .contact-social-media .twitter-image img{
+    width: 97px;
+    height: 97px;
+    margin-right: 118px;
+}
+
+.contact .contact-content .contact-square .contact-other-information .contact-social-media .facebook-image img{
+    width: 97px;
+    height: 97px;
+
+}
