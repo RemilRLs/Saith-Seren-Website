@@ -1,0 +1,220 @@
+/* Styling about section. */
+
+@font-face {
+    font-family: 'Ibarra Real Nova';
+    src: url('fonts/IbarraRealNova-Regular.ttf') format('truetype');
+  }
+
+.about .max-width{
+    
+	pointer-events: all;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.about .about-content{
+    position: relative;
+    height: 882px;
+    width: 100%;
+}
+
+/* Size of the image of Saith Seren pub. */
+
+.about .about-content .image-saith-seren{
+
+    width: 100%;
+    height: 882px;
+}
+
+.about .about-content .image-saith-seren img{
+    width: 100%;
+    height: 882px;
+}
+
+/* Title at the center of the image styling. */
+
+.about .about-content .title-saith-seren{
+    position: absolute; /* The title depend on the position of the class .about-content. */
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 146px;
+    width: 840px;
+    background-color: rgb(255, 255, 255, 0.7);
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    font-family: 'Ibarra Real Nova', sans-serif;
+
+}
+
+.about .about-content .title-saith-seren h1{
+
+    font-size: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.about .about-content .square-about{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 328px;
+    background-color: rgba(204, 2, 2, 0.79);
+    color: white;
+
+
+}
+
+.about .about-content .square-about .welsh-culture{
+    display: block;
+    width: 70%;
+    height: 328px;
+}
+
+.about .about-content .square-about .subscribe{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 328px;
+    background:#EF5656;
+    margin-right: 68px;
+}
+
+/* Styling Welsh Culture Box. */
+
+.about .about-content .square-about .welsh-culture .square-information-welsh{
+    height: 250px;
+    display: block;
+    margin: 60px 60px 60px 228px;
+
+}
+
+/* Title. */
+
+.about .about-content .square-about .welsh-culture .square-information-welsh h3{
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+}
+
+/* Text description. */
+
+.about .about-content .square-about .welsh-culture .square-information-welsh p{
+    color: white;
+    margin-top: 40px; 
+    width: 797px;
+    font-weight: 600;
+}
+
+/* Button Read More. */ 
+
+.about .about-content .square-about .welsh-culture .square-information-welsh .read-more{
+    padding: 10px 20px;
+    background-color: rgba(0,0,0, 0.37);
+    height: 56px;
+    width: 183px;
+    color: #C7C7C7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-weight: 600;
+
+    display: flex; 
+    align-items: center; 
+
+}
+
+/* We had the button on the left of the button. */
+
+.about .about-content .square-about .welsh-culture .square-information-welsh .read-more-icon{
+    width: 20px; 
+    height: 20px;
+
+    margin-right: 18px;
+
+}
+
+
+/* Styling Subscribe Box. */
+
+
+.about .about-content .square-about .subscribe .subscribe-title-box{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-content .square-about .subscribe .subscribe-title-box .subscribe-title{
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.about .about-content .square-about .subscribe .description-subscribe{
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+    margin-top: 50px;
+    padding-right: 22px;
+    padding-left: 22px;
+    width: 100%;
+
+    text-align: center;
+}
+
+.about .about-content .square-about .subscribe .box-subscribe-button .subscribe-button{
+    padding: 10px 20px;
+    background-color: rgba(0,0,0, 0.37);
+    height: 56px;
+    width: 183px;
+    color: #C7C7C7;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    
+    margin-top: 46px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about .about-content .square-about .subscribe .box-subscribe-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Circle and icon at the left of the "Support Us" text/element. */
+
+.about .about-content .square-about .subscribe .subscribe-title-box .circle-heart {
+    height: 47px;
+    width: 47px;
+    background-color: #CC0202;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 17px;
+}
+
+.about .about-content .square-about .subscribe .subscribe-title-box .circle-heart .heart-icon{
+    background-color: #CC0202;
+    color: white;
+
+    height: 20px;
+    width: 20px;
+
+}

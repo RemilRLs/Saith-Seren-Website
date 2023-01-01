@@ -1,0 +1,119 @@
+/* Styling Newsletter Section. */
+
+.newsletter .max-width{
+    
+    width: 100%;
+}
+
+
+.newsletter .newsletter-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 527px;
+    width: 100%;
+    background:#B80F0A;
+}
+
+.newsletter .newsletter-content .newsletter-square{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 934px;
+    height: 462px;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 30px;
+    border: none;
+}
+
+/* Image Newsletter Styling. */
+
+.newsletter .newsletter-content .newsletter-square .icon-newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.newsletter .newsletter-content .newsletter-square .icon-newsletter img{
+    width: 252px;
+    height: 252px;
+}
+
+/* Description Newsletter Styling. */
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information h3{
+    padding-top: 110px;
+    font-size: 32px;
+    font-weight: 600;
+    width: 322px;
+    color: black;
+
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information p{
+    color: black;
+    font-size: 15px;
+    padding-top: 22px;
+    width: 282px;
+}
+
+
+/* Email Prompt Styling. */
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt{
+    position: relative;
+    padding-top: 32px;
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="email"]{
+    position: relative;
+    width: 374px;
+    height: 39px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: none;
+
+    padding-left: 69px;
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt img{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 40px;
+    left: 25px;
+    font-size: 18px;
+
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="submit"]{
+    margin-top: 18px;
+    border: none;
+
+    width: 374px;
+    height: 39px;
+    border-radius: 8px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255,0,0,0.37);
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+

@@ -1,0 +1,110 @@
+/* Styling Newsletter Section. */
+
+.pictures .max-width{
+    
+    width: 100%;
+}
+
+
+.pictures .pictures-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 527px;
+    width: 100%;
+    background:#EF5656;
+}
+
+.pictures .pictures-content .pictures-square{
+    display: flex;
+    padding: 62px;
+    width: 934px;
+    height: 462px;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* Styling Description Picture. */
+
+.pictures .pictures-content .pictures-square .description-picture{
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+
+.pictures .pictures-content .pictures-square .description-picture h1{
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+}
+
+.pictures .pictures-content .pictures-square .description-picture p{
+    padding-top: 43px;
+    font-size : 16px;
+    width: 329px;
+    color: black;
+}
+
+/* Styling Picture Scroll. */
+
+.pictures .pictures-content .pictures-square  .pictures-scroll{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+
+
+}
+
+.pictures .pictures-content .pictures-square  .pictures-scroll img{
+    height: 272px;
+    width: 419px;
+
+}
+
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose{
+    display: flex;
+    align-items: center;
+
+}
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose button{
+    padding-left: 5px;
+}
+
+
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose img{
+    margin-left: 5px;
+
+    width: 24px;
+    height: 24px;
+
+    color: black;
+}
+
+/* To fix the arrow right (too wide). */
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose .arrow-right{
+    width: 20px;
+    height: 20px;
+}
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose button{
+    border: none;
+    background: none;
+    color: black;
+    font-size: 16px;
+}
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-scroll img{
+    margin-top: 20px;
+}

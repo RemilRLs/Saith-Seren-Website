@@ -1,0 +1,222 @@
+/* All body Styling. */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+.max-width{
+    max-width: 1920px;
+    padding: 0 5px;
+    margin: auto;
+}
+
+/* Navbar Styling. */
+
+.navbar{
+    position: fixed; 
+    z-index: 9999;
+    width: 100%;
+    height: 83px;
+    top: 0;
+    background-color:rgb(255, 255, 255); 
+    
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Property of the items in the navbar (home, calendar and more...) */
+
+.navbar .menu-navigation .space-between .menu-navigation-left{
+    display: flex;
+    align-items: center;
+
+}
+
+.navbar .menu-navigation .space-between .menu-navigation-right{
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+    
+}
+
+.navbar .max-width .menu-navigation{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    
+}
+
+.navbar .max-width .menu-navigation .space-between{
+    display: flex;
+    width: 1320px; /* Have to be responsive !*/
+    justify-content: space-between;
+    
+}
+
+
+/* Styling of the menu navigation button. */
+
+.navbar .menu-navigation a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Styling when you put your mouse over element of the menu navigation. */
+
+.navbar .menu-navigation a:hover{
+
+    color: #EF5656;
+}
+
+
+
+/* Subscribe button Styling. */
+.navbar .menu-navigation .menu-navigation-right .subscribe{
+
+    border: none;
+    color: white;
+    padding: 20px;
+    width: 140px;
+    height: 56px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: rgba(235, 16, 2, 0.6)
+}
+
+
+.navbar .flex{
+
+    /* Flex allows to align on the main axis. */
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.navbar .logo{
+    margin: 10px;
+}
+
+.navbar .navbar-element{
+    padding: 0 10px;
+}
+
+/* Dimension of the Saith Seren logo. */
+
+.navbar .logo img{
+    height: 78px;
+    width: 115px;
+}
+
+
+/* Language change Styling. */
+
+.lang-menu{
+    margin-right: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+.navbar .menu-navigation .menu-navigation-right .selected-lang{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+
+.navbar .menu-navigation .menu-navigation-right .selected-lang img{
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.navbar .menu-navigation .menu-navigation-right .selected-lang a{
+    margin-bottom: 20px;
+}
+
+
+.lang-menu ul{
+    margin: 0;
+    padding: 0;
+    top: 30px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    padding: 5px;
+    display: none;
+ 
+    position: absolute;
+
+
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.lang-menu ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 5px;
+}
+
+.lang-menu ul li a{
+
+    width: 120px;
+    display: block;
+    padding: 5px, 10px;
+    justify-content: center;
+    align-items: center;
+
+    
+        
+}
+
+.lang-menu ul li a img{
+
+    height: 20px;
+    width: 20px;
+    margin-right: 1rem;
+
+    margin-left: 5px;
+        
+}
+
+/* Styling when we put the mouse over the language desired. */
+
+.lang-menu ul li a:before{
+
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;  
+        
+}
+
+.lang-menu ul li a:hover{
+
+    background-color:#f2f2f2;
+        
+}
+
+.lang-menu:hover ul{
+    display: block;
+    align-items: center;
+    justify-content: center;
+
+}
