@@ -117,3 +117,13 @@
 
 }
 
+
+
+/* Newsletter Responsive Styling. */
+
+
+@media (max-width: 1055px){
+    .newsletter .newsletter-content{
+        margin-top: 325px;
+    }
+}
