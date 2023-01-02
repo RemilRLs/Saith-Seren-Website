@@ -126,4 +126,76 @@
     .newsletter .newsletter-content{
         margin-top: 325px;
     }
+
+    .newsletter .newsletter-content .newsletter-square{
+        width: 790px;
+        
+    }
+}
+@media (max-width: 862px){
+
+    .newsletter .newsletter-content .newsletter-square .icon-newsletter{
+        width: 40%;
+    }
+    
+    .newsletter .newsletter-content .newsletter-square .icon-newsletter img{
+        width: 200px;
+        height: 200px;
+    }
+    .newsletter .newsletter-content .newsletter-square{
+        width: 650px;
+        
+    }
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information h3{
+        font-size: 25px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information p{
+        width: 200px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="email"]{
+        width: 300px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="submit"]{
+        width: 300px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt img{
+        width: 24px;
+        height: 24px;
+    }
+}
+
+@media (max-width: 695px){
+
+    .newsletter .newsletter-content .newsletter-square{
+        width: 400px;
+        
+    }
+
+    .newsletter .newsletter-content .newsletter-square .icon-newsletter img{
+        width: 101px;
+        height: 101px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information h3{
+        width: 184px;
+    }
+
+
+
+    .newsletter .newsletter-content .newsletter-square .icon-newsletter img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="email"]{
+        width: 150px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="submit"]{
+        width: 150px;
+    }
 }
