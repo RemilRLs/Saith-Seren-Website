@@ -78,6 +78,7 @@
 
 .pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose button{
     padding-left: 5px;
+    cursor: pointer;
 }
 
 
@@ -105,6 +106,41 @@
     font-size: 16px;
 }
 
-.pictures .pictures-content .pictures-square  .pictures-scroll .picture-scroll img{
+
+/* Styling Cross Image. */
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-scroll .image{
     margin-top: 20px;
+    display: none;
+}
+
+.pictures .pictures-content .pictures-square  .pictures-scroll .picture-scroll .image.active{
+    display: block;
+}
+
+
+.pictures .pictures-content .pictures-square .description-picture .title-description{
+    display: none;
+}
+
+.pictures .pictures-content .pictures-square .description-picture .title-description.active{
+    display: block;
+
+    width: 329px;
+}
+
+
+.pictures .pictures-content .pictures-square .description-picture .title-picture{
+    display: none;
+}
+
+.pictures .pictures-content .pictures-square .description-picture .title-picture.active{
+    display: block;
+
+    padding-top: 50px;
+    font-weight: 600;
+    font-size: 40px;
+    color: black;
+
+    margin-bottom: 35px;
 }

@@ -15,7 +15,9 @@
     <link rel="stylesheet" type="text/css" href="css/pictures.css"/>
     <link rel="stylesheet" type="text/css" href="css/contact.css"/>
 
+
     <script src="js/navbar.js" defer></script>
+    <script src="js/pictures.js" defer></script>
 
 </head>
 
@@ -25,18 +27,19 @@
     <!-- Navbar Section. -->
 
     <header class="primary-header flex">
-        <nav class="navbar">
+        <nav data-visible="false" class="navbar">
             <div class="max-width">
                 <div class="logo">
                     <img src="ressources/logo/Saith Seren Logo.png">
                 </div>
                 
                 <!-- Element of the navbar. -->
-
+                <button class="mobile-nav-toggle" aria-controls="menu-navigation" aria-expanded="false"><span class="sr-only" ></span></button>
                 <ul class="menu-navigation flex">
 
                     <div class="space-between">
-                        <div class="menu-navigation menu-navigation-left">
+                        
+                        <div data-visible="false" class="menu-navigation menu-navigation-left">
                             <li><a class="navbar-element" href="#">Home</a></li>
                             <li><a class="navbar-element" href="#">Calendar</a></li>
                             <li><a class="navbar-element" href="#">Pictures</a></li>
@@ -44,7 +47,7 @@
                             <li><a class="navbar-element" href="#">Contact</a></li>
                         </div>
                         
-                        <div class="menu-navigation menu-navigation-right">
+                        <div data-visible="false" class="menu-navigation menu-navigation-right">
                             <li><a class="navbar-element-right subscribe" href="#">Subscribe</a></li>
 
                             <!-- Section for choosing a language. -->
@@ -156,24 +159,24 @@
             <div class="pictures-content">
                 <div class="pictures-square">
                     <div class="description-picture">
-                        <h1>The Centre</h1>
+                        <h1 class="title-picture">The Centre</h1>
 
-                        <p>Here is a view from the front of the center. We are waiting for you there!</p>
+                        <p class="title-description">Here is a view from the front of the center. We are waiting for you there!</p>
                     </div>
 
                     <div class="pictures-scroll">
                         <div class="picture-choose">
-                            <img src="ressources/icons/arrow left.png" alt="arrow left" class="arrow-left">
+                            <button> <img src="ressources/icons/arrow left.png" alt="arrow left" class="arrow-left"></button>
 
                             <button>01</button>
                             <button>02</button>
                             <button>03</button>
 
-                            <img src="ressources/icons/arrow right.png" alt="arrow right" class="arrow-right">
+                            <button><img src="ressources/icons/arrow right.png" alt="arrow right" class="arrow-right"> </button>
                         </div>
 
                         <div class="picture-scroll">
-                            <img src="ressources/images/saith seren pub.jpg" alt="saith seren pub" class="saith-seren-pub">
+
                         </div>
                     </div>
                 </div>
@@ -251,7 +254,7 @@
                             </div>
 
                             <div class="map-interaction">
-
+                                
                             </div>
 
 
