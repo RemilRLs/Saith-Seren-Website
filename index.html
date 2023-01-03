@@ -35,19 +35,18 @@
                 
                 <!-- Element of the navbar. -->
                 <button class="mobile-nav-toggle" aria-controls="menu-navigation" aria-expanded="false"><span class="sr-only" ></span></button>
-                <ul class="menu-navigation flex">
+                <ul data-visible="false" class="menu-navigation flex">
 
-                    <div class="space-between">
                         
-                        <div data-visible="false" class="menu-navigation menu-navigation-left">
-                            <li><a class="navbar-element" href="#">Home</a></li>
-                            <li><a class="navbar-element" href="#">Calendar</a></li>
-                            <li><a class="navbar-element" href="#">Pictures</a></li>
-                            <li><a class="navbar-element" href="#">The Centre</a></li>
-                            <li><a class="navbar-element" href="#">Contact</a></li>
+                        <div class="menu-navigation-left">
+                            <li><a class="navbar-element" href="#about">Home</a></li>
+                            <li><a class="navbar-element margin" href="#calendar">Calendar</a></li>
+                            <li><a class="navbar-element" href="#pictures">Pictures</a></li>
+                            <li><a class="navbar-element margin" href="#">The Centre</a></li>
+                            <li><a class="navbar-element" href="#contact">Contact</a></li>
                         </div>
-                        
-                        <div data-visible="false" class="menu-navigation menu-navigation-right">
+
+                        <div  class="menu-navigation-right">
                             <li><a class="navbar-element-right subscribe" href="#">Subscribe</a></li>
 
                             <!-- Section for choosing a language. -->
@@ -70,8 +69,8 @@
                             </div>
     
                         </div>
+                    
 
-                    </div>
 
                 </ul>
             </div>

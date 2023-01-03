@@ -23,13 +23,13 @@
     height: 83px;
     top: 0;
     background-color:rgba(255, 255, 255, 0.603); 
+
     
 }
 
 .navbar .max-width{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -67,17 +67,25 @@
 }
 
 .navbar .max-width .menu-navigation{
-    display: flex;
     list-style: none;
-    justify-content: space-between;
+    /* Change below value if there is a problem or you want to test something. */ 
+
+    margin: 0;
+
     
 }
 
-.navbar .max-width .menu-navigation .space-between{
+.navbar .max-width .menu-navigation-left {
     display: flex;
-    width: 1320px; /* Have to be responsive !*/
-    justify-content: space-between;
+    justify-content: flex-start;
+    padding-top: 18px;
     
+}
+
+.navbar .max-width .menu-navigation-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 750px;
 }
 
 /* Scroll Navbar. */
@@ -227,6 +235,13 @@
         
 }
 
+/* Exception for this one. */
+
+.navbar .menu-navigation .margin{
+    width: 126px;
+    display: flex;
+}
+
 /* Styling when we put the mouse over the language desired. */
 
 .lang-menu ul li a:before{
@@ -252,46 +267,88 @@
 
 
 
+
 /* Responsive Navbar. */
 
 @media (max-width: 1290px){
-    .navbar .max-width .menu-navigation .space-between{
-        width: 1200px;
+    .navbar .max-width .menu-navigation-right {
+        width: 600px;
     }
 }
 
-@media (max-width: 1251px){
-    .navbar .max-width .menu-navigation .space-between{
-        width: 1100px;
+@media (max-width: 1180px){
+    .navbar .max-width .menu-navigation-right {
+        width: 450px;
     }
 }
 
-@media (max-width: 1150px){
-    .navbar .max-width .menu-navigation .space-between{
-        width: 950px;
+@media (max-width: 1161px){
+    .navbar .max-width .menu-navigation {
+        width: 430px;
     }
 }
 
 @media (max-width: 1000px){
 
 
-    .navbar .max-width{
-        width: 800px;
-    }
-    
+
     .navbar .menu-navigation{
         --gap: 2em;
 
         position: fixed;
-        inset: 0 0 0 30%; 
+        
         z-index: 1000;
+        inset: 0 0 0 55%; 
 
         flex-direction: column;
         padding: min(30vh, 7rem) 2em;
 
         transform: translateX(100%);
         transition: transform 350ms ease-out;
+
+       
     }
+
+    .navbar .menu-navigation-left{
+        flex-direction: column;
+        top: 0;
+        right: 0;
+    }
+
+    .navbar .menu-navigation .navbar-element{
+        margin-top: 20px; /* Add 20 pixels of margin to the top of the element */
+        margin-bottom: 20px; /* Add 20 pixels of margin to the bottom of the element */
+    }
+
+    .navbar .menu-navigation {
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(0.2rem);
+        
+     
+    }
+
+    .navbar .menu-navigation-right{
+        flex-direction: column;
+        width: 0;
+    }
+
+    .navbar .menu-navigation .menu-navigation-right .selected-lang{
+        justify-content: start;
+    }
+
+    .navbar .menu-navigation .menu-navigation-right .subscribe{
+        color: black;
+        background-color: transparent;
+        padding: 0px;
+        width: 109px;
+    }
+
+
+    .navbar .menu-navigation .menu-navigation-right .subscribe:hover{
+
+        color: #EF5656;
+    }
+
 
     .navbar .menu-navigation[data-visible="true"]{
         transform: translateX(0%);
@@ -307,11 +364,14 @@
         border: 0;
         margin-right: 20px;
         color: black;
+        cursor: pointer;
         width: 2rem;
         top: 2rem;
         right: 2rem;
         aspect-ratio: 1;
     }
+
+
     
     
 }
