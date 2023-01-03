@@ -315,9 +315,14 @@
         right: 0;
     }
 
+    .navbar .menu-navigation-right{
+        flex-direction: column;
+        width: 0;
+    }
+
     .navbar .menu-navigation .navbar-element{
-        margin-top: 20px; /* Add 20 pixels of margin to the top of the element */
-        margin-bottom: 20px; /* Add 20 pixels of margin to the bottom of the element */
+        margin-top: 20px; 
+        margin-bottom: 20px; 
     }
 
     .navbar .menu-navigation {
@@ -327,10 +332,6 @@
      
     }
 
-    .navbar .menu-navigation-right{
-        flex-direction: column;
-        width: 0;
-    }
 
     .navbar .menu-navigation .menu-navigation-right .selected-lang{
         justify-content: start;

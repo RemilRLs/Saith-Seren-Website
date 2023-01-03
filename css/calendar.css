@@ -1,0 +1,16 @@
+.calendar .max-width{
+    position: relative;
+    width: 100%;
+}
+
+.triangle-1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -203px;
+    top: 226px;
+    border-style: solid;
+    border-width: 368px 51px 202px 351px;
+    border-color: transparent transparent transparent #EF5656;
+    transform: rotate(215deg);
+}
