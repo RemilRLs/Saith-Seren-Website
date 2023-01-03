@@ -302,3 +302,114 @@
     }
 }
 
+
+
+@media (max-width: 430px){
+    
+    .about .about-content{
+         height: 471px;
+    }
+    
+    .about .about-content .square-about{
+        height: 185px;
+    }
+    .about .about-content .square-about .welsh-culture{
+        margin-top: 59px;
+    
+    }
+
+    .about .about-content .title-saith-seren{
+        height: 95px;
+        width: 356px;
+    }
+
+    .about .about-content .title-saith-seren h1{
+        font-size: 40px;
+    }
+    
+    .about .about-content .image-saith-seren img{
+        width: 100%;
+        height: 430px;
+    }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh h3{
+        font-size: 14px;
+    }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh .welsh-description{
+        font-size: 10px;
+        width: 330px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh .read-more {
+        padding: 12px 19px;
+        height: 26px;   
+        width: 100px;
+        margin-top: -17px;
+        font-size: 10px;
+
+    }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh .read-more-icon{
+        display: none;
+        
+    }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh{
+        margin: -44px 56px 0px 34px 
+    }
+
+    .about .about-content .square-about .subscribe .subscribe-title-box{
+        margin-top: -89px;
+    }
+
+
+    /* Subscrive Section Reponsive Styling. */
+
+    .about .about-content .square-about .subscribe{
+        height: 162px;
+    }
+
+    .about .about-content .square-about .subscribe .subscribe-title-box{
+        padding-top: 20px;
+        
+    }
+
+    .about .about-content .square-about .subscribe .description-subscribe{
+        font-size: 11px;
+        margin-top: 14px;
+    }
+    .about .about-content .square-about .subscribe .description-subscribe p{
+        width: 284px;
+        height: 107px;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about .about-content .square-about .subscribe .subscribe-title-box .subscribe-title{
+        font-size: 13px;
+    }
+
+    .about .about-content .square-about .subscribe .subscribe-title-box .circle-heart{
+        height: 41px;
+        width: 41px;
+    }
+
+    .about .about-content .square-about .subscribe .subscribe-title-box .circle-heart .heart-icon{
+        width: 13px;
+        height: 13px;
+    }
+
+    .about .about-content .square-about .subscribe .box-subscribe-button .subscribe-button{
+        height: 27px;
+        width: 118px;
+        font-size: 11px;
+        margin-top: 15px;
+
+        padding: 8px;
+    }
+}

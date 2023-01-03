@@ -144,3 +144,107 @@
 
     margin-bottom: 35px;
 }
+
+
+@media (max-width: 1000px){
+    .pictures .pictures-content .pictures-square{
+
+        width: 734px;
+        height: 362px;
+
+    }
+
+    .pictures .pictures-content .pictures-square  .pictures-scroll img{
+        height: 200px;
+        width: 319px;
+    
+    }
+
+
+    .pictures .pictures-content .pictures-square .description-picture .title-description.active{
+    
+        width: 229px;
+    }
+
+
+    .pictures .pictures-content .pictures-square .description-picture .title-picture.active{
+
+        font-size: 35px;
+
+    }
+}
+
+@media (max-width: 775px){
+    .pictures .pictures-content .pictures-square{
+
+        width: 534px;
+        height: 362px;
+
+    }
+
+    .pictures .pictures-content .pictures-square  .pictures-scroll img{
+        height: 200px;
+        width: 250px;
+
+    
+    }
+
+    .pictures .pictures-content .pictures-square .description-picture .title-description.active{
+    
+        width: 150px;
+    }
+
+    .pictures .pictures-content .pictures-square .description-picture .title-picture.active{
+
+        font-size: 25px;
+
+    }
+}
+
+
+@media (max-width: 430px){
+    .pictures .pictures-content{
+        background-color: #CC0202;
+        height: 225px;
+    }
+
+    .pictures .pictures-content .pictures-square{
+        width: 351px;
+        height: 211px;
+
+        padding: 33px;
+    }
+
+    .pictures .pictures-content .pictures-square .description-picture{
+        width: 43%;
+    }
+
+    .pictures .pictures-content .pictures-square .pictures-scroll img{
+        width: 177px;
+        height: 130px;
+    }
+
+    .pictures .pictures-content .pictures-square .description-picture .title-picture.active{
+        font-size: 14px;
+        padding-top: 30px;
+    }
+
+    .pictures .pictures-content .pictures-square .description-picture .title-description.active{
+        font-size: 10px;
+        width: 111px;
+    }
+
+    .pictures .pictures-content .pictures-square .pictures-scroll .picture-choose img{
+        width: 10px;
+        height: 10px;
+    }
+
+    .pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose .arrow-right{
+        width: 9px;
+        height: 8px;
+    }
+
+    .pictures .pictures-content .pictures-square .pictures-scroll .picture-choose button{
+        font-size: 10px;
+    }
+}

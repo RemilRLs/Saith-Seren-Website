@@ -43,7 +43,7 @@
 
 .contact .contact-content .contact-square .contact-other-information{
     display: flex;
-    justify-content: space-between;
+    
     width: 100%;
 
 }
@@ -53,7 +53,6 @@
     margin-top: 39px;
     display: flex;
 
-    width: 618px;
     height: 416px;
 
 }
@@ -66,7 +65,6 @@
     margin-top: 39px;
     margin-left: 64px;
     background-color: white;
-    margin-right: 18px;
     border-radius: 20px;
 }
 
@@ -206,4 +204,163 @@
     width: 97px;
     height: 97px;
 
+}
+
+/* Responsive Styling Contact Section. */
+
+@media (max-width: 1000px){
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address {
+        width: 800px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .map-interaction{
+        margin-right: 58px;
+    }
+}
+
+@media (max-width: 935px){
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address {
+        width: 750px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media .twitter-image img{
+        width: 75px;
+        height: 75px;
+        margin-right: 70px;
+    }
+    
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media .facebook-image img{
+        width: 75px;
+        height: 75px;
+    
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .opening-time-information .opening-time {
+        width: 344px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media {
+        width: 344px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .map-interaction{
+        margin-left: 126px;
+    }
+        
+    
+}
+
+@media (max-width: 830px){
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address {
+        width: 650px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .map-interaction{
+        margin-left: 29px;
+    }
+
+}
+
+@media (max-width: 430px){
+
+    .contact .contact-content {
+        height: 350px;
+
+    }
+    .contact .contact-content .contact-square {
+        height: 281px;
+        width: 861px;
+        margin-left: 30px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square h1{
+        font-size: 14px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address{
+        width: 324px;
+        height: 71px;
+        margin-top: 15px;
+        padding: 6px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .address p{
+        font-size: 10px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .address h3{
+        font-size: 14px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email{
+        margin-top: 5px;
+
+    }
+
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email p{
+        font-size: 10px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .email{
+        margin-top: 15px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .email p{
+        font-size: 10px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email img{
+        width: 11px;
+        height: 11px;
+    }
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media{
+        width: 181px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media .twitter-image img{
+        width: 31px;
+        height: 31px;
+    }
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media .facebook-image img{
+        width: 31px;
+        height: 31px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .number-email .email img{
+        width: 11px;
+        height: 11px;
+    }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address .icon-localisation img{
+        width: 45px;
+        height: 37px;
+        margin-top: 11px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .map-interaction{
+        width: 135px;
+        height: 162px;
+        margin-right: 0px;
+        margin-left: 18px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .opening-time-information{
+        height: 190px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .opening-time-information .opening-time{
+        width: 179px;
+        height: 113px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .opening-time h2{
+        font-size: 14px;
+        margin-top: 11px;
+        margin-bottom: 22px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .opening-time p{
+        font-size: 10px;
+    }
 }

@@ -172,12 +172,14 @@
 
     .newsletter .newsletter-content .newsletter-square{
         width: 400px;
-        
+        height: 420px;
     }
 
     .newsletter .newsletter-content .newsletter-square .icon-newsletter img{
         width: 101px;
         height: 101px;
+
+        padding-right: 15px;
     }
 
     .newsletter .newsletter-content .newsletter-square .newsletter-square-information h3{
@@ -198,4 +200,62 @@
     .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="submit"]{
         width: 150px;
     }
+}
+
+
+@media (max-width: 430px){
+    
+    .newsletter .newsletter-content {
+        margin-top: 119px;
+        background-color: #EF5656;
+        height: 277px;
+        width: 100%;
+    }
+
+    .newsletter .newsletter-content .newsletter-square {
+        width: 351px;
+        height: 211px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information h3 {
+        padding-top: 33px;
+        font-size: 14px;
+        width: 184px;
+        height: 50px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information p {
+        font-size: 10px;
+        width: 159px;
+        height: 49px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .icon-newsletter img {
+        width: 101px;
+        height: 101px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="email"]{
+        width: 134px;
+        height: 30px;
+        font-size: 10px;
+        padding-left: 36px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="submit"]{
+        width: 134px;
+        height: 30px;
+        font-size: 13px;
+        margin-top: 11px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt img{
+        width: 12px;
+        height: 11px;
+
+        top: 41px;
+        left: 13px;
+    }
+    
+    
 }
