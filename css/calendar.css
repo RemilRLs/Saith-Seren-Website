@@ -1,3 +1,12 @@
+.max-width{
+    max-width: 1920px;
+    padding: 0 5px;
+    margin: auto;
+}
+
+
+
+
 .calendar .max-width{
     position: relative;
     width: 100%;
@@ -13,4 +22,55 @@
     border-width: 368px 51px 202px 351px;
     border-color: transparent transparent transparent #EF5656;
     transform: rotate(215deg);
+}
+
+.triangle-2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -649px;
+    top: -41px;
+    border-style: solid;
+    border-width: 368px 368px 368px 368px;
+    border-color: transparent transparent transparent #EF5656;
+    transform: rotate(140deg);
+}
+
+.calendar .calendar-content{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 192px;
+    margin-left: 76px;
+    margin-right: 40px;
+
+    height: 750px;
+    width: 93%;
+
+    background: transparent;
+}
+
+.calendar  .calendar-content .calendar-title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+
+.calendar  .calendar-content .calendar-title h1{
+    color: black;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.calendar  .calendar-content .calendar-event{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 750px;
+
+    background-color: green;
 }
