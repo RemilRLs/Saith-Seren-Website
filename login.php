@@ -6,69 +6,69 @@
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Saith Seren / Home</title> 
+    <title>Saith Seren / Access Admin Page</title> 
     <link rel="shortcut icon" type="image/png" href="ressources/logo/Saith Seren Logo.png"/>
     
-    <link rel="stylesheet" type="text/css" href="css/navbar.css"/>
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
 
-    <script src="js/navbar.js" defer></script>
 
 
 </head>
 
 
 <body>
-<header class="primary-header flex">
-        <nav data-visible="false" class="navbar">
-            <div class="max-width">
-                <div class="logo">
-                    <img src="ressources/logo/Saith Seren Logo.png">
-                </div>
-                
-                <!-- Element of the navbar. -->
-                <button class="mobile-nav-toggle" aria-controls="menu-navigation" aria-expanded="false"><span class="sr-only" ></span></button>
-                <ul data-visible="false" class="menu-navigation flex">
-
-                        
-                        <div class="menu-navigation-left">
-                            <li><a class="navbar-element" href="#about">Home</a></li>
-                            <li><a class="navbar-element margin" href="calendar.html">Calendar</a></li>
-                            <li><a class="navbar-element" href="#pictures">Pictures</a></li>
-                            <li><a class="navbar-element margin" href="#">The Centre</a></li>
-                            <li><a class="navbar-element" href="#contact">Contact</a></li>
-                        </div>
-
-                        <div  class="menu-navigation-right">
-                            <li><a class="navbar-element-right subscribe" href="#">Subscribe</a></li>
-
-                            <!-- Section for choosing a language. -->
-
-                            <div class="logo">
-
-                            </div>
-
-                            <div class="lang-menu">
-                                <div class="selected-lang">
-                                    <img src="ressources/logo/united-kingdom.png">
-                                    <a>Welsh</a>
-                                </div>
-
-                                <ul>
-                                    <li><a class="wl"><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
-                                    <li><a class="en"><img src="ressources/logo/united-kingdom.png">English</a></li>
-
-                                </ul>   
-                            </div>
-    
-                        </div>
-                    
 
 
-                </ul>
+
+    <section class="login" id="login">
+        <div class="max-width">
+
+            <div class="login-circle">
+                <img src="ressources/icons/lock icon.png" alt="lock icon" class="lock-icon">
             </div>
-        </nav>
+            <div class="login-content">
+                <div class="login-square">
+                    <div class="saith-seren-image">
+                        <img src="ressources/logo/Saith Seren Logo.png" alt="saith seren logo" class="saith-seren-logo">
 
-    </header>
+                    </div>
+
+                    <div class="login-detail">
+                        <form id="login-form" method="post" action="login.php">
+                            <label class="label-form" for="email">Email<br></label>
+                            <input type="email" id="email" name="email" placeholder="Your email"><br>
+
+                            <label class="label-form" for="passeword">Password<br></label>
+                            <input type="password" id="password" name="password" placeholder="Your password"><br>
+
+                            <div class="button-login">
+                                <p>Can’t login?</p>
+                                <button type="submit">Login</button>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <div class="presentation-login-square">
+                    <div class="circle-1"></div>
+                    <div class="circle-2"></div>
+                    <div class="circle-3"></div>
+                    <div class="triangle-1"></div>
+
+                    <div class="sentence-login-page">
+                        <h3>Welcome to your admin page login</h3>
+                        <p>Login to access your admin account</p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
 
 </body>

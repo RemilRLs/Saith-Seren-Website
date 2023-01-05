@@ -1,1 +1,194 @@
 /* Login Page Styling. */
+
+.max-width{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.login .max-width{
+    
+    width: 100%;
+}
+
+.login-circle{
+    position: absolute;
+    top: -51px;
+    left: -51px;
+    width: 145px;
+    height: 145px;
+
+    background-color: #EF5656;
+    border: none;
+    border-radius: 100px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.login-circle img{
+    margin-left: 26px;
+    margin-top: 26px;
+    width: 64px;
+    height: 64px;
+}
+
+.login .login-content{
+    display: flex;
+
+    width: 100%;
+    height: 700px;
+
+
+}
+
+.login .login-content .login-square{
+    display: block;
+
+    width: 35%;
+    height: 700px;
+    
+
+}
+
+.login .login-content .login-square .saith-seren-image{
+    margin-top: 161px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login .login-content .login-square .saith-seren-image img{
+    width: 228px;
+    height: 138px;  
+
+    margin-bottom: 35px;
+}
+
+/* Login Specification Styling. */
+
+.login .login-content .login-square .login-detail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login .login-content .login-square .login-detail input[type="email"]{
+    width: 374px;
+    height: 34px;
+
+    border: 1px solid gray;
+    border-radius: 8px;
+
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.login .login-content .login-square .login-detail input[type="password"]{
+    width: 374px;
+    height: 34px;
+
+    border: 1px solid gray;
+    border-radius: 8px;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.login .login-content .login-square .login-detail button{
+    width: 130px;
+    height: 41px;
+
+    background-color: #EF5656;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.4);
+    border-radius: 60px;
+    border: none;
+}
+
+.login .login-content .login-square .login-detail p{
+    color: gray;
+}
+
+.login .login-content .login-square .login-detail .button-login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .login-content .login-square .login-detail .label-form{
+    font-weight: 600;
+}
+
+
+/* Presentation Login Square Styling. */
+
+.login .login-content .presentation-login-square{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #B80F0A;
+    width: 65%;
+}
+
+.login .login-content .presentation-login-square .circle-1{
+    position: absolute;
+    top: -54px;
+    right: -47px;
+    width: 145px;
+    height: 145px;
+
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.4);
+
+    background-color: #EF5656;
+    border: none;
+    border-radius: 100px;
+}
+
+.login .login-content .presentation-login-square .circle-2{
+    position: absolute;
+    bottom: -102px;
+    left: -84px;
+    width: 345px;
+    height: 345px;
+
+    box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.4);
+
+    background-color: #EF5656;
+    border: none;
+    border-radius: 345px;
+}
+
+.login .login-content .presentation-login-square .triangle-1{
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: -176px;
+    bottom: -260px;
+    border-style: solid;
+    border-width: 368px 51px 202px 351px;
+    border-color: transparent transparent transparent #EF5656;
+    transform: rotate(253deg);
+}
+
+
+/* Sentence Login Page Styling. */
+
+.login .login-content .presentation-login-square .sentence-login-page h3{
+    font-size: 32px;
+    color:white;
+    font-weight: 600;
+    height: 20px;
+}
+
+.login .login-content .presentation-login-square .sentence-login-page p{
+    font-size: 18px;
+    color: white;
+    font-weight: normal;
+}
