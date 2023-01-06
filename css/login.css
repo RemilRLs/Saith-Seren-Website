@@ -192,3 +192,39 @@
     color: white;
     font-weight: normal;
 }
+
+
+/* Error Message Login Styling. */
+
+
+.login .login-content .login-square .login-detail .login-message{
+    display: none;
+}
+
+
+.login .login-content .login-square .login-detail .login-message {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+
+
+}
+
+
+.login .login-content .login-square .login-detail .login-message p:not(:empty){
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #B80202;
+
+    background-color: rgba(184,15,10, 0.3);
+    width: 374px;
+    height: 39px;
+    border-radius: 10px;
+    border: none;
+}
