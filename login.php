@@ -24,9 +24,12 @@
 
     if(empty(trim($_POST['email']))){
         $email_err = "Please enter an email.";
-      }
+    }
+    if(empty(trim($_POST['password']))){
+        $password_err = "Please enter a password.";
+    }
 
-    if(empty($error_message)){
+    if(empty($email_err) && empty($password_err)){
         // Escape the email and password to prevent SQL injection attacks
         $email = mysqli_real_escape_string($db, $_POST['email']);
         $password = mysqli_real_escape_string($db, $_POST['password']);
@@ -93,6 +96,14 @@
 
                                     <?php if (isset($login_err)) { ?>
                                     <p class="error-message"><?php echo $login_err; ?></p>
+                                    <?php } ?>
+
+                                    <?php if (isset($email_err)) { ?>
+                                    <p class="error-message"><?php echo $email_err; ?></p>
+                                    <?php } ?>
+
+                                    <?php if (isset($password_err)) { ?>
+                                    <p class="error-message"><?php echo $password_err; ?></p>
                                     <?php } ?>
 
                                 </div>
