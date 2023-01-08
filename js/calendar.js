@@ -39,7 +39,11 @@ function addEventCalendar(date, title, description, hour){
     calendarList.appendChild(eventDiv);
 
 }
+/*
 
 addEventCalendar('29 <br>Jan', 'Ceci est un test', 'Test Jam Night', '10 AM');
 
-addEventCalendar('29 <br>Jan', 'Ceci est un test', 'Test Jam Night', '10 AM');
+
+addEventCalendar('29 <br>Jan', 'Cecrezrzerei est un test', 'Test Jam Night', '10 AM');
+
+*/

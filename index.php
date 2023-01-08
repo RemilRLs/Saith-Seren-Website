@@ -2,7 +2,7 @@
   // Start the session
   session_start();
 
-  $email_err = "";
+  $email_err = $subscribe_confirmation = "";
 
   // Check if the form was submitted
   if (isset($_POST['email'])) {
@@ -26,11 +26,13 @@
         $query = "SELECT * FROM newsletter WHERE email = '$email'";
         $result = mysqli_query($db, $query);
         if (mysqli_num_rows($result) == 1) {
-            $email_err = "Already an email.";
+            $email_err = "You are already subscribe.";
         } else {
         // Login have failed.
             $query = "INSERT INTO newsletter (email) VALUES ('$email')";
             $result = mysqli_query($db, $query);
+
+            $subscribe_confirmation = "You are now subscribe to the newsletter.";
         }
     }
 
@@ -79,7 +81,7 @@
                         
                         <div class="menu-navigation-left">
                             <li><a class="navbar-element" href="#about">Home</a></li>
-                            <li><a class="navbar-element margin" href="calendar.html">Calendar</a></li>
+                            <li><a class="navbar-element margin" href="calendar.php">Calendar</a></li>
                             <li><a class="navbar-element" href="#pictures">Pictures</a></li>
                             <li><a class="navbar-element margin" href="#">The Centre</a></li>
                             <li><a class="navbar-element" href="#contact">Contact</a></li>

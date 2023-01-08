@@ -40,7 +40,7 @@
         if (mysqli_num_rows($result) == 1) {
         // Login successful
         $_SESSION['logged_in'] = true;
-        header("Location: dashboard.php");
+        header("Location: admin.php");
         exit;
         } else {
         // Login have failed.

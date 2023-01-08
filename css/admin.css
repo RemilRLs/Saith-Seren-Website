@@ -1,0 +1,61 @@
+/* Admin Page Styling */
+
+.max-width{
+    max-width: 1920px;
+    margin: auto;
+}
+
+.admin .max-width{
+
+    width: 100%;
+}
+
+
+.admin .admin-content{
+    display: flex;
+
+    width: 100%;
+    height: 700px;
+
+
+
+}
+
+.admin .admin-content .other-square{
+    background-color: rgb(85, 0, 255);
+    width: 80%;
+    height: 700px;
+}
+
+
+/* Dashboard Styling. */
+
+.admin .admin-content .dashboard-square{
+    display: block;
+    width: 20%;
+    height: 100%;
+    background-color: #2d2d2d;
+
+    border-bottom-right-radius: 50px;
+}
+
+.admin .admin-content .dashboard-square .title-dashboard{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.admin .admin-content .dashboard-square .title-dashboard h3{
+    color: #CC0202;
+    font-size: 24px;
+}
+
+.admin .admin-content .dashboard-square .title-dashboard p{
+    color: white;
+    font-size: 20px;
+}
+
+.admin .admin-content .dashboard-square .line{
+    border: 1px solid #676767;
+}
