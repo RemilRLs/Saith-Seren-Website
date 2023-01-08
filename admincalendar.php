@@ -65,11 +65,9 @@
 
                 <div class="other-square">
                     <div class="list-event">
-                        <?php while($row = mysqli_fetch_assoc($result)): ?>
 
                             <div class="event"> 
-                                <span class="event-id"><?php echo htmlspecialchars($row['id']); ?> </span>
-                                <span class="event-title"><?php echo htmlspecialchars($row['event-title']); ?> </span>
+
                             </div>
                         <?php endwhile; ?>
                     </div>
