@@ -14,14 +14,66 @@
 
     // We read every titles and id.
 
+    // .= is for append an element into a variable.
+
+    $formEvent = "<form method='post' action=''>";
+
+    $formEdit = "<form method='post' action=''>";
+
+    // We read every titles and id.
     while($row = mysqli_fetch_assoc($result)){
         $id = $row['id'];
         $title = $row['event_title'];
-
-
-        echo($title);
-        echo($id);
+    
+        $formEvent .= "<p> $title </p>";
+    
+        // Give each delete button a unique name.
+        $formEvent .= "<form method='post' action=''>";
+        $formEvent .= "<input type='hidden' name='id' value='$id'>";
+        $formEvent .= "<input type='submit' name='delete$id' value='Delete'>";
+        /*
+        $formEvent .= "<input type='hidden' name='id' value='$id'>";
+        $formEvent .= "<input type='submit' name='edit' value='Edit'>";
+        */
+        $formEvent .= "</form>";
     }
+    
+    // If the delete button for a specific row is clicked, delete that row from the table.
+    
+    foreach($_POST as $key => $value) {
+        if (strpos($key, 'delete') !== false) {
+            $id = substr($key, 6);
+            $query = "DELETE FROM calendar_events WHERE id=$id";
+            mysqli_query($db, $query);
+        }
+    }
+
+    // If the button edit is clicked we put a new prompt to modify the value of the event.
+/*
+    if(isset($_POST['edit'])){
+        $id = $_POST['id'];
+
+        $formEdit .= "<label class='space-between' for='event-title' style='margin-right: 135px;'> Title: </label><br>";
+        $formEdit .= "<input type='hidden' name='id' value='$id'>";
+        $formEdit .= "<input type='text' id='eventTitle' name='eventTitle'><br>";
+
+        $formEdit .= "<input type='submit' name='confirm' value='Confirm'>";
+        
+
+
+    }
+
+
+    if(isset($_POST['confirm'])){
+        $id = $_POST['id'];
+        $title = $_POST['eventTitle'];
+
+
+        $query = "UPDATE calendar_events SET event_title='$title' WHERE id='$id'";
+        mysqli_query($db, $query);
+    }
+
+    */
 
 ?>
 
@@ -67,9 +119,12 @@
                     <div class="list-event">
 
                             <div class="event"> 
-
+                                <?php echo $formEvent; ?>
                             </div>
-                        <?php endwhile; ?>
+
+                            <div class="event-edit"> 
+                                <?php echo $formEdit; ?>
+                            </div>
                     </div>
                     
                 </div>

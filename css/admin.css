@@ -22,7 +22,6 @@
 }
 
 .admin .admin-content .other-square{
-    background-color: rgb(85, 0, 255);
     width: 80%;
     height: 700px;
 }
@@ -58,4 +57,85 @@
 
 .admin .admin-content .dashboard-square .line{
     border: 1px solid #676767;
+}
+
+
+/* Calendar Form Styling. */
+
+.admin .admin-content .other-square {
+    margin-left: 40px;
+    margin-top: 30px;
+}
+
+.admin .admin-content .other-square .calendar{
+
+}
+
+.admin .admin-content .other-square .calendar h3{
+    color: #CC0202;
+    margin-bottom: 50px;
+}
+
+.admin .admin-content .other-square .calendar .flex{
+    display: flex;    
+    
+
+}
+
+.admin .admin-content .other-square .calendar .space-between{
+    padding-right: 30px;
+}
+
+.admin .admin-content .other-square .calendar .line-2{
+    display: flex;
+    width: 90%;
+    border: 1px solid rgba(82, 82, 82, 0.619);
+    border-width: thin;
+
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.admin .admin-content .other-square .calendar textarea{
+    width: 500px;
+    height: 200px;
+}
+
+.admin .admin-content .other-square .calendar input{
+    width: 190px;
+    height: 20px;
+}
+
+.admin .admin-content .other-square .calendar label{
+    font-weight: 600;
+}
+
+.admin .admin-content .other-square .calendar .square-button{
+    display: flex;
+    justify-content: flex-end;
+    width: 90%;
+}
+
+.admin .admin-content .other-square .calendar .square-button button{
+    background-color: rgba(198,0,0, 0.7);
+
+    border: none;
+    border-radius: 20px;
+
+    width: 100px;
+    height: 35px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+    color: white;
+}
+
+
+/* List/Manipulation Event Styling. */
+
+.admin .admin-content .other-square .list-event .event-edit label{
+    margin-top: 90px;
 }

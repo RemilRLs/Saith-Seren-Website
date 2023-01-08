@@ -21,13 +21,13 @@ window.onload = function(){
       $result = mysqli_query($db, $query);
 
       while ($row = mysqli_fetch_assoc($result)) {
-          $date = $row['event_date'];
-          $title = $row['event_title'];
-          $description = $row['event_description'];
-          $hour = $row['event_hour'];
-        
-          echo "addEventCalendar('$date', '$title', '$description', '$hour');";
-        }
+        $date = $row['event_date'];
+        $title = $row['event_title'];
+        $description = $row['event_description'];
+        $hour = $row['event_hour'];
+      
+        echo "addEventCalendar('$date', '$title', '$description', '$hour');";
+      }
   ?>
 }
 
