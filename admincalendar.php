@@ -29,12 +29,11 @@
     
         // Give each delete button a unique name.
         $formEvent .= "<form method='post' action=''>";
-        $formEvent .= "<input type='hidden' name='id' value='$id'>";
         $formEvent .= "<input type='submit' name='delete$id' value='Delete'>";
-        /*
+        
         $formEvent .= "<input type='hidden' name='id' value='$id'>";
-        $formEvent .= "<input type='submit' name='edit' value='Edit'>";
-        */
+        $formEvent .= "<input type='submit' name='edit$id' value='Edit'>";
+        
         $formEvent .= "</form>";
     }
     
@@ -42,26 +41,28 @@
     
     foreach($_POST as $key => $value) {
         if (strpos($key, 'delete') !== false) {
+
+            // We extract the id withouth the "delete".
+
             $id = substr($key, 6);
             $query = "DELETE FROM calendar_events WHERE id=$id";
             mysqli_query($db, $query);
         }
+
+        if(strpos($key, 'edit') !== false){
+
+            // We extract the id withouth the "edit".
+            $id = substr($key, 4);
+
+            $formEdit .= "<label class='space-between' for='event-title' style='margin-right: 135px;'> Title: </label><br>";
+            $formEdit .= "<input type='hidden' name='id' value='$id'>";
+            $formEdit .= "<input type='text' id='eventTitle' name='eventTitle'><br>";
+    
+            $formEdit .= "<input type='submit' name='confirm' value='Confirm'>";
+        }
     }
 
-    // If the button edit is clicked we put a new prompt to modify the value of the event.
-/*
-    if(isset($_POST['edit'])){
-        $id = $_POST['id'];
 
-        $formEdit .= "<label class='space-between' for='event-title' style='margin-right: 135px;'> Title: </label><br>";
-        $formEdit .= "<input type='hidden' name='id' value='$id'>";
-        $formEdit .= "<input type='text' id='eventTitle' name='eventTitle'><br>";
-
-        $formEdit .= "<input type='submit' name='confirm' value='Confirm'>";
-        
-
-
-    }
 
 
     if(isset($_POST['confirm'])){
@@ -73,7 +74,7 @@
         mysqli_query($db, $query);
     }
 
-    */
+    
 
 ?>
 
