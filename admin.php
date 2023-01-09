@@ -100,6 +100,11 @@
                     <div class="calendar">
                     <a class="calendar-href" href="admincalendar.php">Calendar</a>
                     </div>
+
+                    <div class="line"></div>
+                    <div class="overview">
+                        <a class="register-href" href="register.php">Register</a>
+                    </div>
                 </div>
 
                 <div class="other-square">
