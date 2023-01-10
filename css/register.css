@@ -1,0 +1,128 @@
+/* Register Form Styling. */
+
+
+.admin .admin-content .other-square .register{
+
+    display: block;
+
+    height: 400px;
+    width: 350px;
+
+
+}
+
+.admin .admin-content .other-square .register .register-add-user{
+    display: block;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.admin .admin-content .other-square .register .register-add-user p{
+    color: rgb(145, 145, 145);
+    padding-left: 2px;
+
+    margin-bottom: 40px;
+}
+
+.admin .admin-content .other-square .register .register-add-user h3{
+    height: 5px;
+
+
+    font-size: 30px;
+}
+
+
+.admin .admin-content .other-square .register .register-form{
+    display: block;
+    justify-content: space-between;
+
+    height: 400px;  
+}
+
+.admin .admin-content .other-square .register .register-form label{
+    color: rgb(52, 52, 52);
+
+    font-weight: 500;
+
+}
+
+.admin .admin-content .other-square .register .register-form input{
+    margin-top: 7px;
+    margin-bottom: 20px;
+
+
+    width: 374px;
+    height: 34px;
+
+    border: 1px solid gray;
+    border-radius: 8px;
+    
+    background-color: rgba(243, 241, 241, 0.604);
+}
+
+.admin .admin-content .other-square .register .register-form .button-login{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.admin .admin-content .other-square .register .register-form button{
+    width: 130px;
+    height: 41px;
+
+    background-color: rgba(198,0,0, 0.7);
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0.4);
+    border-radius: 60px;
+    border: none;
+}
+
+
+/* Message Error Styling. */
+
+.admin .admin-content .other-square .register .register-form .register-message{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    padding-left: 15px;
+
+
+}
+
+.admin .admin-content .other-square .register .register-form .register-message p:not(:empty){
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+    color: red;
+
+    background-color: rgba(184,15,10, 0.3);
+    width: 320px;
+    height: 39px;
+    border-radius: 10px;
+    border: none;
+}
+
+.admin .admin-content .other-square .register .register-form .register-message .confirm-message:not(:empty){
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: green;
+
+    background-color: rgba(11, 155, 25, 0.3);
+    width: 374px;
+    height: 39px;
+    border-radius: 10px;
+    border: none;
+    
+}

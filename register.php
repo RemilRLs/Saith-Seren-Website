@@ -2,6 +2,8 @@
     session_start();
 
     $email_err = $password_err = $password_confirm_err  = $password_not_err = $already_user_err = "";
+    $success = "";
+
 
     $password = "";
 
@@ -55,7 +57,7 @@
                     printf("Error: %s\n", mysqli_error($db));
                 }
                 else{
-                    echo("YOUHOU");
+                    $success = "Administrator have been created.";
                     // Success of the query.
                 }
             }
@@ -80,6 +82,7 @@
     <link rel="shortcut icon" type="image/png" href="ressources/logo/Saith Seren Logo.png"/>
     
     <link rel="stylesheet" type="text/css" href="css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="css/register.css"/>
 
 
 
@@ -118,40 +121,27 @@
                     <div class="register"> 
                         <div class="register-add-user"> 
                             <h3>Registration</h3>
+                            <p>Register an admin.<p>
                         </div>
 
-                        <form class="register" method="post" action="register.php">
+                        <form class="register-form" method="post" action="register.php">
 
                         <div class="register-message">
 
-                                <?php if (isset($email_err)) { ?>
-                                <p class="error-message"><?php echo $email_err; ?></p>
-                                <?php } ?>
-
-                                <?php if (isset($email_err)) { ?>
-                                <p class="error-message"><?php echo $already_user_err; ?></p>
-                                <?php } ?>
-
-                                <?php if (isset($password)) { ?>
-                                <p class="error-message"><?php echo $password_err; ?></p>
-                                <?php } ?>
-
-                                <?php if (isset($password_confirm_err)) { ?>
-                                <p class="error-message"><?php echo $password_confirm_err; ?></p>
-                                <?php } ?>
-
-                                
-                                <?php if (isset($password_not_err)) { ?>
-                                <p class="error-message"><?php echo $password_not_err;?></p>
-                                <?php } ?>
+                                <?= (isset($email_err) && !empty($email_err)) ?  '<p class="error-message">'.$email_err.'</p>':''; ?>
+                                <?= (isset($email_err) && !empty($email_err)) ?  '<p class="error-message">'.$already_user_err.'</p>':''; ?>
+                                <?= (isset($password_err) && !empty($password_err)) ?  '<p class="error-message">'.$password_err.'</p>':''; ?>
+                                <?= (isset($password_confirm_err) && !empty($password_confirm_err)) ?  '<p class="error-message">'.$password_confirm_err.'</p>':''; ?>
+                                <?= (isset($success) && !empty($success)) ?  '<p class="confirm-message">'.$success.'</p>':''; ?>
 
                             </div>
                             <label class="label-form" for="email">Email<br></label>
                             <input type="email" id="email" name="email" placeholder="Your email"><br>
 
+                            <label class="label-form" for="email">Password<br></label>
                             <input type="password" id="password" name="password" placeholder="Password"><br>
 
-                            
+                            <label class="label-form" for="email">Confirm Password<br></label>
                             <input type="password" id="password_confirm" name="password_confirm" placeholder="Repeat your password"><br>
 
                             <div class="button-login">
