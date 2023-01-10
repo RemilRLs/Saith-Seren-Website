@@ -47,7 +47,7 @@
     display: block;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
     height: 100%;
 }
 
@@ -115,6 +115,29 @@
     font-weight: 600;
     font-size: 16px;
 
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information  .message-newsletter{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information .message-newsletter .error-message{
+
+
+    width: 100%;
+    color: #B80202;
+
+}
+
+.newsletter .newsletter-content .newsletter-square .newsletter-square-information .message-newsletter .confirmation-message{
+
+    width: 100%;
+    color: #11a10e;
 }
 
 
@@ -214,7 +237,7 @@
 
     .newsletter .newsletter-content .newsletter-square {
         width: 351px;
-        height: 211px;
+        height: 256px;
     }
 
     .newsletter .newsletter-content .newsletter-square .newsletter-square-information h3 {

@@ -3,7 +3,7 @@
   session_start();
 
   $email_err = $password_err = $login_err = "";
-
+/*
   // Check if the user is already logged in
   if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
 
@@ -11,7 +11,7 @@
 
     exit;
   }
-  
+  */
 
   // Check if the form was submitted
   if (isset($_POST['email']) && isset($_POST['password'])) {
@@ -39,7 +39,7 @@
         $result = mysqli_query($db, $query);
         if (mysqli_num_rows($result) == 1) {
         // Login successful
-        $_SESSION['logged_in'] = true;
+        $_SESSION['authenticated'] = true;
         header("Location: admin.php");
         exit;
         } else {

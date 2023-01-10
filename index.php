@@ -20,15 +20,18 @@
 
     if(empty($email_err)){
         // Escape the email and password to prevent SQL injection attacks
+
         $email = mysqli_real_escape_string($db, $_POST['email']);
 
-        // Check if the email and password are correct
         $query = "SELECT * FROM newsletter WHERE email = '$email'";
         $result = mysqli_query($db, $query);
+        // If there is already an email.
+
         if (mysqli_num_rows($result) == 1) {
             $email_err = "You are already subscribe.";
         } else {
-        // Login have failed.
+            // If everything is ok.
+
             $query = "INSERT INTO newsletter (email) VALUES ('$email')";
             $result = mysqli_query($db, $query);
 
@@ -175,9 +178,10 @@
                         <h3>Subscribe to our <br>Newsletter !</h3>
 
                         <p>Subscribe to our newsletter to stay informed about news related to Welsh culture.</p>
-                        <?php if (isset($email_err)) { ?>
-                                    <p class="error-message"><?php echo $email_err; ?></p>
-                        <?php } ?>
+                        <div class="message-newsletter"> 
+                            <?= (isset($email_err) && !empty($email_err)) ?  '<p class="error-message">'.$email_err.'</p>':''; ?>
+                            <?= (isset($subscribe_confirmation) && !empty($subscribe_confirmation)) ?  '<p class="confirmation-message">'.$subscribe_confirmation.'</p>':''; ?>
+                        </div>
                         <div class="email-prompt">
 
                             <form class="newsletter-form" id="newsletter-form" method="post" action="index.php">

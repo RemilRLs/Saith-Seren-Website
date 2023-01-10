@@ -10,6 +10,15 @@
     $password = '';
 
 
+    // Start the session
+    session_start();
+
+    // Check if the user is logged in
+    if (!isset($_SESSION['authenticated'])) {
+        header('Location: login.php');
+        exit;
+    }
+
 
 
     // If there is a POST Method and everything is fine.
