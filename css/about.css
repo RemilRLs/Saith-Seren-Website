@@ -413,3 +413,29 @@
         padding: 8px;
     }
 }
+
+/* Phone less than 320px. */
+
+@media (max-width: 325px){
+    .about .about-content .title-saith-seren {
+        height: 95px;
+        width: 300px;
+      }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh .welsh-description{
+        width: 290px;
+    }
+    .newsletter .newsletter-content .newsletter-square{
+        width: 300px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information p {
+        width: 150px;
+    }
+
+    .about .about-content .square-about .welsh-culture .square-information-welsh .welsh-description {
+        width: 260px;
+      }
+
+
+}

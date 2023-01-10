@@ -155,6 +155,18 @@
         
     }
 }
+
+@media (max-width: 1050px){
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="email"] {
+        width: 324px;
+
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information .email-prompt input[type="submit"]{
+        width: 324px;
+    }
+}
+
 @media (max-width: 862px){
 
     .newsletter .newsletter-content .newsletter-square .icon-newsletter{
@@ -281,4 +293,15 @@
     }
     
     
+}
+
+
+@media (max-width: 325px){
+    .newsletter .newsletter-content .newsletter-square {
+        width: 300px;
+    }
+
+    .newsletter .newsletter-content .newsletter-square .newsletter-square-information p{
+        width: 150px;
+    }
 }

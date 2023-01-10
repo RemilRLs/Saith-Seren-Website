@@ -264,7 +264,7 @@
 @media (max-width: 430px){
 
     .contact .contact-content {
-        height: 350px;
+        height: 390px;
 
     }
     .contact .contact-content .contact-square {
@@ -363,4 +363,30 @@
     .contact .contact-content .contact-square .contact-other-information .opening-time p{
         font-size: 10px;
     }
+}
+
+@media (max-width: 325px){
+    .contact .contact-content {
+        height: 390px;
+    }
+
+
+    .contact .contact-content .contact-square .contact-other-information .opening-time-information .opening-time {
+        width: 150px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .map-interaction {
+        margin-left: 10px;
+        width: 110px;
+    }
+
+    .contact .contact-content .contact-square .contact-other-information .contact-social-media {
+        width: 150px;
+      }
+
+    .contact .contact-content .contact-square .contact-address-information-square .contact-address {
+        width: 270px;
+        height: 75px;
+
+    }  
 }
