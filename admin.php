@@ -103,32 +103,100 @@
 
                     <div class="line"></div>
 
-                    <div class="overview">
+                    <div class="white overview">
                         <button class="button-overview">
-                        <img src="ressources/icons/diag icon.png" alt="diag icon" class="diag-icon">
-                        <h3>Overview</h3>
-                        <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                            <img src="ressources/icons/diag icon.png" alt="diag icon" class="diag-icon">
+                            <h3>Overview</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
                         </button>
 
                     </div>
 
-                    <div class="overview-more" data-visible="false">
+                    <div class="overview-more display-none" data-visible="false">
                             
-                        <a class="statistic" href="#">Statistic</a>
-                        <a class="notification" href="#">Notification</a>
+                        <a class="statistic block text-decoration "  href="#">
+                            <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
+                            Statistic
+                        </a>
+                        <a class="notification block text-decoration " href="#">
+                            <img src="ressources/icons/notification icon.png" alt="notification icon" class="notification-icon icon-more">
+                            Notification
+                        </a>
                     </div>
                     
                     <div class="line"></div>
 
-                    <div class="calendar">
-                    <a class="calendar-href" href="admincalendar.php">Calendar</a>
+                    <div class="newsletter overview white">
+                        <button class="button-newsletter text-decoration">
+                            <img src="ressources/icons/newsletter icon.png" alt="newsletter icon" class="newsletter-icon">
+                            <h3>Newsletter</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
+
+                    </div>
+
+                    <div class="newsletter-more display-none" data-visible="false">
+                            
+                            <a class="subscriber block text-decoration" href="#">
+                                <img src="ressources/icons/user icon.png" alt="user icon" class="user-icon icon-more">
+                                Subscriber
+                            </a>
+ 
                     </div>
 
                     <div class="line"></div>
-                    <div class="overview">
-                        <a class="register-href" href="register.php">Register</a>
+
+
+
+                    <div class="calendar overview white">
+                        <button class="button-calendar text-decoration">
+                            <img src="ressources/icons/calendar icon.png" alt="calendar icon" class="calendar-icon">
+                            <h3>Calendar</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
                     </div>
+
+                    <div class="calendar-more display-none" data-visible="false">
+                            
+                            <a class="calendar block text-decoration" href="admin.php">
+                                <img src="ressources/icons/add event icon.png" alt="add event icon" class="add-event-icon icon-more">
+                                Add Event
+                            </a>
+
+                            <a class="calendar block text-decoration" href="admincalendar.php">
+                                <img src="ressources/icons/event.png" alt="event icon" class="event-icon icon-more">
+                                List Event
+                            </a>
+ 
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="user overview white">
+                        <button class="button-user text-decoration">
+                            <img src="ressources/icons/user icon 2.png" alt="user icon" class="user2-icon">
+                            <h3>User</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
+                    </div>
+
+                    <div class="user-more display-none" data-visible="false">
+                            
+                            <a class="user block text-decoration" href="register.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
+                                Add User
+                            </a>
+
+                            <a class="user block text-decoration" href="register.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
+                                List User
+                            </a>
+ 
+                    </div>
+
+                    <div class="line"></div>
                 </div>
+                    
 
                 <div class="other-square">
                     <div class="calendar"> 

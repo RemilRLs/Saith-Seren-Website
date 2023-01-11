@@ -61,22 +61,108 @@
     font-size: 20px;
 }
 
-.admin .admin-content .dashboard-square .overview-more{
+.admin .admin-content .dashboard-square .display-none{
     display: none;
+
+    transition: height 0.5s;
 }
+
+
+.admin .admin-content .dashboard-square .white .white-text {
+    color: white;
+ }
+ 
 
 .admin .admin-content .dashboard-square .overview-more[data-visible="true"]{
     display: block;
 }
 
+.admin .admin-content .dashboard-square .newsletter-more[data-visible="true"]{
+    display: block;
+}
 
-.admin .admin-content .dashboard-square .overview-more a{
+.admin .admin-content .dashboard-square .calendar-more[data-visible="true"]{
+    display: block;
+}
+.admin .admin-content .dashboard-square .user-more[data-visible="true"]{
+    display: block;
+}
+
+.admin .admin-content .dashboard-square .overview-more .overview-more.visible {
+    height: auto;
+}
+
+.admin .admin-content .dashboard-square .overview-more .notification-icon{
+    margin-left: 22px;
+}
+
+.admin .admin-content .dashboard-square .overview-more a {
+    color: white;
+
+    font-size: 16px;
+    
+    margin-bottom: 10px;
+}
+
+.admin .admin-content .dashboard-square .text-decoration{
+    text-decoration: none;
+    color: white;
+}
+
+.admin .admin-content .dashboard-square .icon-more {
+    width: 24px;
+    height: 24px;
+
+    margin-right: 20px; 
+    margin-top: 10px;
+}
+
+.admin .admin-content .dashboard-square .newsletter .newsletter-icon{
+    width: 24px;
+    height: 24px;
+
+    margin-right: 17px;
+    margin-left: 7px;
+}
+
+.admin .admin-content .dashboard-square .user .user2-icon{
+    width: 27px;
+    height: 27px;
+
+    margin-left: 7px;
+}
+
+.admin .admin-content .dashboard-square .user h3{
+    margin-left: 54px;
+    margin-right: 20px;
+}
+
+.admin .admin-content .dashboard-square .newsletter-more img{
+    width: 30px;
+    height: 30px;
+}
+
+
+.admin .admin-content .dashboard-square .calendar .calendar-icon{
+    width: 26px;
+    height: 28px;
+
+    margin-right: 28px;
+}
+
+
+
+.admin .admin-content .dashboard-square .block{
     display: block;
 
     align-items: center;
     text-align: center;
     justify-content: center;
+
+
+    margin-bottom: 15px;
 }
+
 
 .admin .admin-content .dashboard-square .overview .diag-icon{
     width: 28px;
