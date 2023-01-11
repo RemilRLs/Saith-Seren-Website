@@ -57,6 +57,15 @@
             $formEdit .= "<label class='space-between' for='event-title' style='margin-right: 135px;'> Title: </label><br>";
             $formEdit .= "<input type='hidden' name='id' value='$id'>";
             $formEdit .= "<input type='text' id='eventTitle' name='eventTitle'><br>";
+
+            $formEdit .= "<label class='space-between' for='event-date' style='margin-right: 135px;'> Date: </label><br>";
+            $formEdit .= "<input type='text' id='eventDate' name='eventDate'><br>";
+
+            $formEdit .= "<label class='space-between' for='event-desc' style='margin-right: 135px;'> Description: </label><br>";
+            $formEdit .= "<textarea id='eventDesc' name='eventDesc'></textarea><br>";
+
+            $formEdit .= "<label class='space-between' for='event-hour' style='margin-hour: 135px;'> Hour: </label><br>";
+            $formEdit .= "<input type='input' id='eventHour' name='eventHour'><br>";
     
             $formEdit .= "<input type='submit' name='confirm' value='Confirm'>";
         }
@@ -68,9 +77,10 @@
     if(isset($_POST['confirm'])){
         $id = $_POST['id'];
         $title = $_POST['eventTitle'];
+        $date = $_POST['eventDate'];
 
 
-        $query = "UPDATE calendar_events SET event_title='$title' WHERE id='$id'";
+        $query = "UPDATE calendar_events SET event_title='$title', event_date='$date' WHERE id='$id'";
         mysqli_query($db, $query);
     }
 

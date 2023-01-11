@@ -83,6 +83,8 @@
     
     <link rel="stylesheet" type="text/css" href="css/admin.css"/>
 
+    <script src="js/dashboard.js" defer></script>
+
 
 
 
@@ -102,8 +104,20 @@
                     <div class="line"></div>
 
                     <div class="overview">
-                        <p> test </p>
+                        <button class="button-overview">
+                        <img src="ressources/icons/diag icon.png" alt="diag icon" class="diag-icon">
+                        <h3>Overview</h3>
+                        <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
+
                     </div>
+
+                    <div class="overview-more" data-visible="false">
+                            
+                        <a class="statistic" href="#">Statistic</a>
+                        <a class="notification" href="#">Notification</a>
+                    </div>
+                    
                     <div class="line"></div>
 
                     <div class="calendar">

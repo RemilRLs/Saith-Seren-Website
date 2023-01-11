@@ -38,6 +38,60 @@
     border-bottom-right-radius: 50px;
 }
 
+.admin .admin-content .dashboard-square .overview {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.admin .admin-content .dashboard-square .overview button{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.admin .admin-content .dashboard-square .overview h3{
+    color: #646464;
+    font-size: 20px;
+}
+
+.admin .admin-content .dashboard-square .overview-more{
+    display: none;
+}
+
+.admin .admin-content .dashboard-square .overview-more[data-visible="true"]{
+    display: block;
+}
+
+
+.admin .admin-content .dashboard-square .overview-more a{
+    display: block;
+
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.admin .admin-content .dashboard-square .overview .diag-icon{
+    width: 28px;
+    height: 25px;
+
+    padding-right: 20px;
+}
+
+.admin .admin-content .dashboard-square .overview .arrow-bottom-icon{
+    width: 24px;
+    height: 24px;
+
+    padding-left: 20px;
+}
+
 .admin .admin-content .dashboard-square .title-dashboard{
     display: block;
     align-items: center;
