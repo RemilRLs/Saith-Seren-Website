@@ -190,9 +190,30 @@
                     </div>
 
                     <div class="line"></div>
-                    <div class="overview">
-                        <a class="register-href" href="register.php">Register</a>
+
+                    <div class="user overview white">
+                        <button class="button-user text-decoration">
+                            <img src="ressources/icons/user icon 2.png" alt="user icon" class="user2-icon">
+                            <h3>User</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
                     </div>
+
+                    <div class="user-more display-none" data-visible="false">
+                            
+                            <a class="user block text-decoration" href="register.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
+                                Add User
+                            </a>
+
+                            <a class="user block text-decoration" href="listuser.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
+                                List User
+                            </a>
+ 
+                    </div>
+
+                    <div class="line"></div>
                 </div>
 
                 <div class="other-square">
