@@ -47,6 +47,7 @@
             $id = substr($key, 6);
             $query = "DELETE FROM calendar_events WHERE id=$id";
             mysqli_query($db, $query);
+            header("Location: " . $_SERVER['REQUEST_URI']);
         }
 
         if(strpos($key, 'edit') !== false){
@@ -76,12 +77,31 @@
 
     if(isset($_POST['confirm'])){
         $id = $_POST['id'];
-        $title = $_POST['eventTitle'];
-        $date = $_POST['eventDate'];
 
+        $query = "UPDATE calendar_events SET ";
 
-        $query = "UPDATE calendar_events SET event_title='$title', event_date='$date' WHERE id='$id'";
+        if(!empty($_POST['eventTitle'])){
+            $title = $_POST['eventTitle'];
+            $query .= "event_title = '$title', ";
+        }
+        if(!empty($_POST['eventDate'])){
+            $date = $_POST['eventDate'];
+            $query .= "event_date = '$date', ";
+        }
+        if(!empty($_POST['eventDesc'])){
+            $desc = $_POST['eventDesc'];
+            $query .= "event_desc = '$desc', ";
+        }
+        if(!empty($_POST['eventHour'])){
+            $hour = $_POST['eventHour'];
+            $query .= "event_hour = '$hour',  ";
+        }
+
+        $query = rtrim($query, ", ");
+        $query .= " WHERE id='$id'";
+        
         mysqli_query($db, $query);
+        header("Location: " . $_SERVER['REQUEST_URI']);
     }
 
     

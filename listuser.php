@@ -38,8 +38,11 @@
             $id = substr($key, 6);
             $query = "DELETE FROM login WHERE id=$id";
             mysqli_query($db, $query);
+            header("Location: " . $_SERVER['REQUEST_URI']);
         }
     }
+
+    
 
 
 

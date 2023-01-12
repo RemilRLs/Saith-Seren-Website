@@ -59,6 +59,7 @@
                 printf("Error: %s\n", mysqli_error($db));
             }
             else{
+                
     
                 // Success of the query.
             }
@@ -66,6 +67,7 @@
 
     }
 
+    
     
 
 ?>
