@@ -198,3 +198,119 @@
 .calendar  .calendar-content .calendar-event .list-event .event .desc-event  .hour-event p{
     font-size: 11px;
 }
+@media (max-width: 430px){
+
+.calendar .calendar-content{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        margin-left: 10px;
+        margin-right: 10px;
+    
+        height: 750px;
+        width: 93%;
+    
+        background: transparent;
+    }
+
+    .calendar  .calendar-content .calendar-title{
+        position: absolute;
+        top: 0px;
+        left: 125px;
+        width: 50%;
+    }
+    
+        .calendar  .calendar-content .calendar-title h1{
+        color: black;
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .calendar  .calendar-content .calendar-event{
+        position: absolute;
+        top: 100px;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: 750px;
+    
+    }
+	
+/* List of Event Styling. */
+    .calendar  .calendar-content .calendar-event .month-event{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    
+    
+        width: 100%;
+    }
+    
+        .calendar  .calendar-content .calendar-event .month-event h1{
+        color: black;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+/* Line Styling. */
+
+    .calendar  .calendar-content .calendar-event .line{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    
+        width: 100%;
+        height: 1px;
+        background-color: black;
+    }
+/* List of Event Styling. */
+
+    .calendar  .calendar-content .calendar-event .list-event .event{
+        display: flex;
+        width: 95%;
+        height: 130px;
+        margin-top : 10px;
+    
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.4);
+        
+        border: none;
+        background-color: white;
+    }
+	.calendar  .calendar-content .calendar-event .list-event .event .date-event{
+        display: flex;
+        align-items: center;
+        
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        justify-content: center;
+        text-align: center;
+        width: 20%;
+    
+        background-color: #2D2D2D;
+    }
+
+    .calendar  .calendar-content .calendar-event .list-event .event .date-event h3{
+        color: white;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+
+    .calendar  .calendar-content .calendar-event .list-event .event .desc-event{
+        width: 90%;
+        background-color: white;
+        display: block;
+    
+        padding-left: 10px;
+        margin-top: 5px;
+    
+    }
+
+    .calendar  .calendar-content .calendar-event .list-event .event .desc-event .description-event{
+        font-size: 14px;
+        width: 340px;
+        height: 48px;
+    }
+}
