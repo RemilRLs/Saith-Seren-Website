@@ -138,7 +138,7 @@
 
                     <div class="newsletter-more display-none" data-visible="false">
                             
-                            <a class="subscriber block text-decoration" href="#">
+                            <a class="subscriber block text-decoration" href="newsletter_list.php">
                                 <img src="ressources/icons/user icon.png" alt="user icon" class="user-icon icon-more">
                                 Subscriber
                             </a>

@@ -55,7 +55,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
 }
 
 .calendar  .calendar-content .calendar-title h1{
@@ -197,4 +196,136 @@
 
 .calendar  .calendar-content .calendar-event .list-event .event .desc-event  .hour-event p{
     font-size: 11px;
+}
+
+/* iPad Pro Responsive.  */
+
+@media (max-width: 1120px){
+    .calendar .calendar-content .calendar-title h1{
+        font-size: 42px;
+    }
+    .calendar .calendar-content .calendar-event .list-event .event {
+        width: 650px;
+    }
+
+    .calendar .calendar-content .calendar-event .month-event{
+        width: 133%;
+    }
+}
+
+@media (max-width: 725px){
+
+    .calendar .calendar-content .calendar-event .month-event {
+        width: 200%;
+    
+    }
+}
+
+@media (max-width: 430px){
+
+    .calendar .calendar-content{
+        height: 750px;
+        width: 220px;
+
+    }
+
+    .calendar  .calendar-content .calendar-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        width: 300px;
+    }
+    
+    .calendar  .calendar-content .calendar-title h1{
+        font-size: 32px;
+        font-weight: 600;
+    }
+
+    .calendar  .calendar-content .calendar-event{
+        position: absolute;
+        top: 100px;
+        display: block;
+        justify-content: center;
+        width: 100%;
+        height: 750px;
+    
+    }
+	
+    /* List of Event Styling. */
+
+
+    .calendar  .calendar-content .calendar-event .month-event{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    
+    
+        width: 300px;
+    }
+    
+    .calendar  .calendar-content .calendar-event .month-event h1{
+        font-size: 20px;
+
+        
+    }
+
+
+
+    /* Line Styling. */
+
+    .calendar  .calendar-content .calendar-event .line{
+        width: 300px;
+    }
+
+
+    /* List of Event Styling. */
+
+    .calendar  .calendar-content .calendar-event .list-event .event{
+        width: 140%;
+    
+    }
+
+    .calendar .calendar-content .calendar-event .list-event .event .desc-event .title-event h3{
+        font-size: 14px;
+    }
+    .calendar  .calendar-content .calendar-event .list-event .event .date-event h3{
+        font-size: 14px;
+    }
+
+    .calendar .calendar-content .calendar-event .list-event .event .desc-event .hour-event{
+        width: 65px;
+        height: 26px;
+    }
+
+    .calendar .calendar-content .calendar-event .list-event .event .desc-event .hour-event p {
+        font-size: 10px;
+    }
+    .calendar .calendar-content .calendar-event .list-event .event .desc-event .hour-event img{
+        width: 13px;
+        height: 13px;
+    }
+
+    .calendar .calendar-content .calendar-event .list-event .event .desc-event .description-event {
+        width: 230px;
+    }
+
+    .calendar .calendar-content .calendar-event .list-event .event .desc-event .description-event p {
+        font-size: 10px;
+
+        width: 233px;
+        height: 54px;
+    }
+
+
+}
+
+/* iPhone 12 Responsive. */
+
+@media (max-width: 395px){
+    .calendar .calendar-content{
+        margin-left: 42px;
+    }
 }

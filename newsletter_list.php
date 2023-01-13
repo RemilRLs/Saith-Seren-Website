@@ -10,11 +10,11 @@
 
     $db = mysqli_connect($host, $username, "", $dbName);
 
-    $query = "SELECT id, email FROM login";
+    $query = "SELECT id, email FROM newsletter";
     $result = mysqli_query($db, $query);
 
 
-    $formUser = "<form method='post' action=''>";
+    $formNewsletter = "<form method='post' action=''>";
 
     // We want to retrieve information like email and a button delete to delete it if the admin want.
 
@@ -22,12 +22,12 @@
         $id = $row['id'];
         $email = $row['email'];
 
-        $formUser .= "<form method='post' action=''>";
-        $formUser .= "<p> $email </p>";
+        $formNewsletter .= "<form method='post' action=''>";
+        $formNewsletter .= "<p> $email </p>";
 
-        $formUser .= "<input type='submit' name='delete$id' value='Delete'>";
+        $formNewsletter .= "<input type='submit' name='delete$id' value='Delete'>";
 
-        $formUser .= "</form>";
+        $formNewsletter .= "</form>";
     }
 
     foreach($_POST as $key => $value) {
@@ -36,7 +36,7 @@
             // We extract the id withouth the "delete".
 
             $id = substr($key, 6);
-            $query = "DELETE FROM login WHERE id=$id";
+            $query = "DELETE FROM newsletter WHERE id=$id";
             mysqli_query($db, $query);
             header("Location: " . $_SERVER['REQUEST_URI']);
         }
@@ -60,7 +60,6 @@
     <link rel="shortcut icon" type="image/png" href="ressources/logo/Saith Seren Logo.png"/>
     
     <link rel="stylesheet" type="text/css" href="css/admin.css"/>
-    <link rel="stylesheet" type="text/css" href="css/listuser.css"/>
 
     <script src="js/dashboard.js" defer></script>
 
@@ -166,7 +165,7 @@
                                 Add User
                             </a>
 
-                            <a class="user block text-decoration" href="register.php">
+                            <a class="user block text-decoration" href="listuser.php">
                                 <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
                                 List User
                             </a>
@@ -178,14 +177,9 @@
                     
 
                 <div class="other-square">
-                    <div class="user-square">
+                    <div class="newsletter">
+                    <?php echo $formNewsletter; ?> 
                         
-                        <div class="title-user">
-                            <h3>Manage User</h3>
-                        </div>
-                        <div class="information-user">
-                        <?php echo $formUser; ?>
-                        </div>
                     
                     </div>
                 </div>

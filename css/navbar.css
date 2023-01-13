@@ -85,7 +85,7 @@
 .navbar .max-width .menu-navigation-right{
     display: flex;
     justify-content: flex-end;
-    width: 750px;
+    width: 700px;
 }
 
 /* Scroll Navbar. */
@@ -272,7 +272,7 @@
 
 @media (max-width: 1290px){
     .navbar .max-width .menu-navigation-right {
-        width: 600px;
+        width: 573px;
     }
 }
 
