@@ -1,10 +1,15 @@
 <?php
-  // Start the session
+
+    include 'phpscript/visit_counter.php'; // Counter of visit.
+
+  // Start the session.
+
   session_start();
 
   $email_err = $subscribe_confirmation = "";
 
-  // Check if the form was submitted
+  // Check if the form was submitted.
+
   if (isset($_POST['email'])) {
 
     // Information of the database.
@@ -19,7 +24,7 @@
 
 
     if(empty($email_err)){
-        // Escape the email and password to prevent SQL injection attacks
+        // Escape the email and password to prevent SQL injection attacks.
 
         $email = mysqli_real_escape_string($db, $_POST['email']);
 

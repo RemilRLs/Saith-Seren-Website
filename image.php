@@ -1,73 +1,32 @@
 <?php
-    session_start();
-
-    $email_err = $password_err = $password_confirm_err  = $password_not_err = $already_user_err = "";
+    
+    $message_err = "";
     $success = "";
 
-
-    $password = "";
-
-    $host = 'localhost';
-    $dbName = 'saith';
-    $username = 'root';
-    $password = '';
-    
-    
-    if(isset($_POST['email']) && isset($_POST['password']) && isset($_POST['password_confirm'])){
-
-        if(empty(trim($_POST['email']))){
-            $email_err = "Please enter an email.";
-        }
-    
-        if(empty(trim($_POST['password'])) || empty(trim($_POST['password_confirm']))){
-            $password_err = "Please enter a password.";
-        }
-        elseif(strlen(trim($_POST['password'])) < 8){
-            $password_err = "Password must have atleast 8 characters.";
-        }
-        else{
-            $password = trim($_POST['password']);
-        }
-
-        if(empty($password_err) && ($password != trim($_POST['password_confirm']))){
-            $password_not_err = "Password didn't match, please retry.";
-        }
-
-        $db = mysqli_connect($host, $username, "", $dbName);
-
-        if(empty($email_err) && empty($password_err) && empty($password_confirm_err) && empty($password_not_err)){
-
-            $email = mysqli_real_escape_string($db, $_POST['email']);
-            $password = mysqli_real_escape_string($db, $_POST['password']);
-
-            // We check if there is alaready an user with the same email.
-
-            $query = "SELECT id FROM login WHERE email = '$email'";
-            $result = mysqli_query($db, $query);
-
-            if (mysqli_num_rows($result) >= 1) {
-                $already_user_err = "This email is already taken.";
-            }
-            else{
-
-                $query = "INSERT INTO login (email, password) VALUES ('$email', '$password')";
-                $result = mysqli_query($db, $query);
-    
-                if ($result === FALSE){
-                    printf("Error: %s\n", mysqli_error($db));
-                }
-                else{
-                    $success = "Administrator have been created.";
-                    // Success of the query.
-                }
-            }
+    if(isset($_FILES['image'])){
+        $file = $_FILES['image'];
 
 
-        }
+    // We check if the image have a binary of type "image" like "jpg, jpeg, png and more...).
 
-        
 
+    $file_type = exif_imagetype($file['tmp_name']);
+
+    if ($file_type === false) {
+        $message_err = "The file that you provide is not an image, please retry...";
+        exit();
     }
+
+    $file_name = uniqid() . '.' . image_type_to_extension($file_type, false);
+
+
+    move_uploaded_file($file['tmp_name'], 'ressources/images/' . $file_name);
+
+    $success =  'Image uploaded to ressources/images/' . $file_name;
+}
+
+
+
 ?>
 
 <!DOCTYPE html>
@@ -196,42 +155,43 @@
                     </div>
 
                     <div class="line"></div>
+
+                    <div class="image overview white">
+                        <button class="button-image text-decoration">
+                            <img src="ressources/icons/add image icon.png" alt="image icon" class="image-icon">
+                            <h3>Image</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
+                    </div>
+
+
+                    
+                    <div class="image-more display-none" data-visible="false">
+                            
+                            <a class="image block text-decoration" href="register.php">
+                                <img src="ressources/icons/add-user.png" alt="add image icon" class="add-image-icon icon-more">
+                                List Image
+                            </a>
+
+                            <a class="user block text-decoration" href="listuser.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-image-icon icon-more">
+                                Add Image
+                            </a>
+ 
+                    </div>
+
+                    <div class="line"></div>
                 </div>
 
                 <div class="other-square">
-                    <div class="register"> 
-                        <div class="register-add-user"> 
-                            <h3>Registration</h3>
-                            <p>Register an admin.<p>
-                        </div>
+                    <div class="image"> 
 
-                        <form class="register-form" method="post" action="register.php">
+                    <form action="image.php" method="post" enctype="multipart/form-data">
+                        <input type="file" name="image" accept="image/*"><br>
+                        <input type="submit" value="Upload">
+                    </form>
 
-                        <div class="register-message">
-
-                                <?= (isset($email_err) && !empty($email_err)) ?  '<p class="error-message">'.$email_err.'</p>':''; ?>
-                                <?= (isset($email_err) && !empty($email_err)) ?  '<p class="error-message">'.$already_user_err.'</p>':''; ?>
-                                <?= (isset($password_err) && !empty($password_err)) ?  '<p class="error-message">'.$password_err.'</p>':''; ?>
-                                <?= (isset($password_confirm_err) && !empty($password_confirm_err)) ?  '<p class="error-message">'.$password_confirm_err.'</p>':''; ?>
-                                <?= (isset($success) && !empty($success)) ?  '<p class="confirm-message">'.$success.'</p>':''; ?>
-
-                            </div>
-                            <label class="label-form" for="email">Email<br></label>
-                            <input type="email" id="email" name="email" placeholder="Your email"><br>
-
-                            <label class="label-form" for="email">Password<br></label>
-                            <input type="password" id="password" name="password" placeholder="Password"><br>
-
-                            <label class="label-form" for="email">Confirm Password<br></label>
-                            <input type="password" id="password_confirm" name="password_confirm" placeholder="Repeat your password"><br>
-
-                            <div class="button-login">
-                                <button type="submit">Submit</button>
-
-                            </div>
-                        </form>
-                    
-                    </div>
+                   </div>
                 </div>
             </div>
         </div>

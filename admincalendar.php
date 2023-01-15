@@ -153,7 +153,7 @@
 
                     <div class="overview-more display-none" data-visible="false">
                             
-                        <a class="statistic block text-decoration "  href="#">
+                        <a class="statistic block text-decoration "  href="statistic.php">
                             <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
                             Statistic
                         </a>

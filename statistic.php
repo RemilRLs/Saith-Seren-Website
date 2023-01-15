@@ -1,3 +1,42 @@
+<?php 
+    include 'phpscript/visit_counter_display.php';
+
+
+    $host = 'localhost';
+    $dbName = 'saith';
+    $username = 'root';
+    $password = '';
+
+    // Global counter of the visit of the website in the entire year.
+
+    $db = mysqli_connect($host, $username, "", $dbName);
+    $query = "SELECT COUNT(date) as numberVisits FROM visits";
+
+    $result = mysqli_query($db, $query);
+
+    if ($row = mysqli_fetch_assoc($result)){
+
+        // Success of the query.
+
+        $counterVisit = "<p> $row[numberVisits] </p>";
+    }
+    else{
+
+        printf("Error: %s\n", mysqli_error($db));
+
+    }
+
+
+    $query = "SELECT COUNT(email) as numberEmail FROM newsletter";
+    $result = mysqli_query($db, $query);
+
+    if($row = mysqli_fetch_assoc($result)){
+        $counterEmail = "<p> $row[numberEmail] </p>";
+    }
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,7 +82,7 @@
 
                     <div class="overview-more display-none" data-visible="false">
                             
-                        <a class="statistic block text-decoration "  href="#">
+                        <a class="statistic block text-decoration "  href="statistic.php">
                             <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
                             Statistic
                         </a>
@@ -145,7 +184,7 @@
                                     </div>
 
                                     <div class="statistic-number">
-                                        <p>4571</p>
+                                        <?php echo $counterVisit; ?>
                                     </div>
                                 </div>
 
@@ -161,7 +200,7 @@
                                     </div>
 
                                     <div class="statistic-number">
-                                        <p>274</p>
+                                        <?php echo $counterEmail; ?>
                                     </div>
                                 </div>
                                 
