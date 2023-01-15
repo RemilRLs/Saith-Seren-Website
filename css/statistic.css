@@ -1,0 +1,120 @@
+/* Styling Statistic Section. */
+
+.admin .admin-content{
+    background-color:  rgba(232, 232,232, 0.45);
+}
+
+.admin .admin-content .other-square{
+    display: flex;
+    align-items: center;
+    flex-direction: column; /*  Put the center at the top of the page. */
+}
+
+
+.admin .admin-content .other-square  .title-page-statistic{
+    color: #4B4B4B;
+
+    width: 100%;
+    margin-left: 60px;
+
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.admin .admin-content .other-square  .title-page-statistic h3{
+    margin-left: 25px;
+
+    height: 10px;
+}
+
+
+.admin .admin-content .other-square .statistic{
+
+    display: block;
+
+    height: 800px;
+    width: 90%;
+
+}
+
+.admin .admin-content .other-square .statistic .square-statistic-advanced{
+    width: 100%;
+
+    height: 339px;
+
+    background-color: white;
+
+
+    border: none;
+    border-radius: 30px;
+}
+
+.admin .admin-content .other-square .statistic .element-statistic-square{
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 190px;
+
+}
+
+.admin .admin-content .other-square .statistic .element-statistic-square .static{
+
+    display: flex;
+
+    width: 230px;
+    height: 119px;
+
+    background-color: white;
+
+    border: none;
+    border-radius: 20px;
+}
+
+
+/* Styling Interior of the box statistic. */
+
+.admin .admin-content .other-square .statistic .element-statistic-square .static .statistic-icon{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: 100%;
+
+}
+
+.admin .admin-content .other-square .statistic .element-statistic-square .static .statistic-icon img{
+    width: 51px;
+    height: 46px;
+
+    padding-left: 10px;
+}
+
+.admin .admin-content .other-square .statistic .element-statistic-square .static .statistic-global{
+    display: block;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    width: 75%;
+    height: 100%;
+
+}
+
+
+.admin .admin-content .other-square .statistic .element-statistic-square .static .statistic-global .statistic-title{
+    color: #646464;
+
+    font-size: 18px;
+
+}
+
+.admin .admin-content .other-square .statistic .element-statistic-square .static .statistic-global .statistic-number{
+    color: black;
+
+    font-size: 18px;
+    font-weight: 600;
+
+
+}
