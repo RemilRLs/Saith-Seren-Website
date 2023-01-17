@@ -68,6 +68,8 @@
     <script src="js/navbar.js" defer></script>
     <script src="js/pictures.js" defer></script>
 
+    <?php include 'phpscript/picture_element.php'; ?>
+
 </head>
 
 
