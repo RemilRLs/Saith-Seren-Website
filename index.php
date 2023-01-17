@@ -67,6 +67,7 @@
 
     <script src="js/navbar.js" defer></script>
     <script src="js/pictures.js" defer></script>
+    <script src="js/about.js" defer></script>
 
     <?php include 'phpscript/picture_element.php'; ?>
 
@@ -90,15 +91,15 @@
 
                         
                         <div class="menu-navigation-left">
-                            <li><a class="navbar-element" href="#about">Home</a></li>
-                            <li><a class="navbar-element margin" href="calendar.php">Calendar</a></li>
-                            <li><a class="navbar-element" href="#pictures">Pictures</a></li>
-                            <li><a class="navbar-element margin" href="thecentre.php">The Centre</a></li>
-                            <li><a class="navbar-element" href="#contact">Contact</a></li>
+                            <li><a class="navbar-element home" href="#about">Home</a></li>
+                            <li><a class="navbar-element margin calendar"  href="calendar.html">Calendar</a></li>
+                            <li><a class="navbar-element picture"  href="#pictures">Pictures</a></li>
+                            <li><a class="navbar-element margin centre" href="#">The Centre</a></li>
+                            <li><a class="navbar-element contact"  href="#contact">Contact</a></li>
                         </div>
 
                         <div  class="menu-navigation-right">
-                            <li><a class="navbar-element-right subscribe" href="https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF0008R8HK5T6FCJQQ8B61HREPGP8JE&initial=%2Fcollect-customer-details" target="_blank">Subscribe</a></li>
+                            <li><a class="navbar-element-right subscribe subscribeText" href="https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF0008R8HK5T6FCJQQ8B61HREPGP8JE&initial=%2Fcollect-customer-details" target="_blank">Subscribe</a></li>
 
                             <!-- Section for choosing a language. -->
 
@@ -112,11 +113,11 @@
                                     <a>Welsh</a>
                                 </div>
 
-                                <ul>
-                                    <li><a class="wl"><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
-                                    <li><a class="en"><img src="ressources/logo/united-kingdom.png">English</a></li>
+                                <ul  class="langWrap">
+                                    <li><a  href="#" class="translate " language='welsh'><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
+                                    <li><a  href="#" class="translate active" language='english'><img src="ressources/logo/united-kingdom.png">English</a></li>
 
-                                </ul>   
+                                </ul>     
                             </div>
     
                         </div>
@@ -143,12 +144,12 @@
                 <div class="square-about">
                     <div class="welsh-culture">
                         <div class="square-information-welsh">
-                            <h3 class="welsh-title">Welsh Culture</h3>
+                            <h3 class="welsh-title title">Welsh Culture</h3>
 
-                            <p class="welsh-description">You are proud or interested in Welsh culture then you have come to the right place! Here<br> you will find all the information you need.</p>
+                            <p class="welshDescrip welsh-description">You are proud or interested in Welsh culture then you have come to the right place! Here<br> you will find all the information you need.</p>
 
 
-                            <button class="read-more"> <img src="ressources/icons/arrow bottom.png" alt="arrow bottom icon" class="read-more-icon"> Read More</button>
+                            <button class="read-more readmore"> <img src="ressources/icons/arrow bottom.png" alt="arrow bottom icon" class="read-more-icon"> Read More</button>
                         </div>
                     </div>
                     <div class="subscribe">
@@ -158,12 +159,12 @@
                                 <img src="ressources/icons/heart subscribe.png" alt="heart icon" class="heart-icon">
                             </div>
 
-                            <h3 class="subscribe-title">Support Us</h3>
+                            <h3 class="subscribeSupport subscribe-title">Support Us</h3>
                         </div>
 
-                        <p class="description-subscribe"> Become a member of Saith Seren for £10 a month, support us in our aim to promote Welsh language and culture</p>
+                        <p class="descriptionSubscribe description-subscribe"> Become a member of Saith Seren for £10 a month, support us in our aim to promote Welsh language and culture</p>
                         <div class="box-subscribe-button">
-                            <button class="subscribe-button" onclick="window.open('https://pay.gocardless.com/billing/static/flow?id=BRF0008R8KQ1C459KNRPTWDAYJ5M59B4', '_blank')">Subscribe</button>
+                            <button class="subscribeText subscribe-button" onclick="window.open('https://pay.gocardless.com/billing/static/flow?id=BRF0008R8KQ1C459KNRPTWDAYJ5M59B4', '_blank')">Subscribe</button>
                             
 
                         </div>
@@ -184,9 +185,9 @@
                     </div>
 
                     <div class="newsletter-square-information">
-                        <h3>Subscribe to our <br>Newsletter !</h3>
+                        <h3 class="subscribeNewsLetter">Subscribe to our <br>Newsletter !</h3>
 
-                        <p>Subscribe to our newsletter to stay informed about news related to Welsh culture.</p>
+                        <p class="descriptionSubscribeNewsLetter">Subscribe to our newsletter to stay informed about news related to Welsh culture.</p>
                         <div class="message-newsletter"> 
                             <?= (isset($email_err) && !empty($email_err)) ?  '<p class="error-message">'.$email_err.'</p>':''; ?>
                             <?= (isset($subscribe_confirmation) && !empty($subscribe_confirmation)) ?  '<p class="confirmation-message">'.$subscribe_confirmation.'</p>':''; ?>
