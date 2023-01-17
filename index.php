@@ -98,7 +98,7 @@
                         </div>
 
                         <div  class="menu-navigation-right">
-                            <li><a class="navbar-element-right subscribe" href="#">Subscribe</a></li>
+                            <li><a class="navbar-element-right subscribe" href="https://pay.gocardless.com/billing/static/collect-customer-details?id=BRF0008R8HK5T6FCJQQ8B61HREPGP8JE&initial=%2Fcollect-customer-details" target="_blank">Subscribe</a></li>
 
                             <!-- Section for choosing a language. -->
 
@@ -163,7 +163,9 @@
 
                         <p class="description-subscribe"> Become a member of Saith Seren for £10 a month, support us in our aim to promote Welsh language and culture</p>
                         <div class="box-subscribe-button">
-                            <button class="subscribe-button">Subscribe</button>
+                            <button class="subscribe-button" onclick="window.open('https://pay.gocardless.com/billing/static/flow?id=BRF0008R8KQ1C459KNRPTWDAYJ5M59B4', '_blank')">Subscribe</button>
+                            
+
                         </div>
                     </div>
                 </div>
@@ -303,18 +305,18 @@
                                 <div class="contact-social-media">
 
                                     <div class="twitter-image">
-                                        <img src="ressources/images/facebook.png" alt="facebook image" class="s-facebook-image">
+                                    <a class="link-facebook" href="https://www.facebook.com/saithseren1" target="_blank"><img src="ressources/images/facebook.png" alt="facebook image" class="s-facebook-image"></a>
                                     </div>
 
                                     <div class="facebook-image">
-                                        <img src="ressources/images/twitter.png" alt="twitter image" class="s-twitter-image">
+                                    <a class="link-twitter" href="https://twitter.com/saithseren" target="_blank"><img src="ressources/images/twitter.png" alt="twitter image" class="s-twitter-image"></a> 
                                     </div>
 
                                 </div>
                             </div>
 
                             <div class="map-interaction">
-                                
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9594.063619977964!2d-2.9918844!3d53.0470371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3fc094f30db4bbaa!2sSaith%20Seren!5e0!3m2!1sfr!2suk!4v1673925586807!5m2!1sfr!2suk" width="100%" height="100%" style="border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
 
 

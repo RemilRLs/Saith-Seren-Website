@@ -41,9 +41,9 @@
                         <div class="menu-navigation-left">
                             <li><a class="navbar-element" href="index.php">Home</a></li>
                             <li><a class="navbar-element margin" href="#calendar">Calendar</a></li>
-                            <li><a class="navbar-element" href="#pictures">Pictures</a></li>
+                            <li><a class="navbar-element" href="index.php#pictures">Pictures</a></li>
                             <li><a class="navbar-element margin" href="#">The Centre</a></li>
-                            <li><a class="navbar-element" href="#contact">Contact</a></li>
+                            <li><a class="navbar-element" href="index.php#contact">Contact</a></li>
                         </div>
 
                         <div  class="menu-navigation-right">
