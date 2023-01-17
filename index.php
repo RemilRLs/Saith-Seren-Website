@@ -93,7 +93,7 @@
                             <li><a class="navbar-element" href="#about">Home</a></li>
                             <li><a class="navbar-element margin" href="calendar.php">Calendar</a></li>
                             <li><a class="navbar-element" href="#pictures">Pictures</a></li>
-                            <li><a class="navbar-element margin" href="#">The Centre</a></li>
+                            <li><a class="navbar-element margin" href="thecentre.php">The Centre</a></li>
                             <li><a class="navbar-element" href="#contact">Contact</a></li>
                         </div>
 
