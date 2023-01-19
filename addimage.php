@@ -1,5 +1,13 @@
 <?php
 
+
+    session_start();
+
+    if (!isset($_SESSION['authenticated'])) {
+        header('Location: login.php');
+        exit;
+    }
+
     $titlePicture_err = $descPicture_err = $imagePicture_err = "";
 
     // Database information.

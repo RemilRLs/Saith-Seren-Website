@@ -1,5 +1,10 @@
 <?php
     session_start();
+    if (!isset($_SESSION['authenticated'])) {
+        header('Location: login.php');
+        exit;
+    }
+    
 
     $email_err = $password_err = $password_confirm_err  = $password_not_err = $already_user_err = "";
     $success = "";

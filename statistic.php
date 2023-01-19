@@ -2,6 +2,13 @@
     include 'phpscript/visit_counter_display.php';
 
 
+    session_start();
+
+    if (!isset($_SESSION['authenticated'])) {
+        header('Location: login.php');
+        exit;
+    }
+
     $host = 'localhost';
     $dbName = 'saith';
     $username = 'root';
@@ -216,7 +223,7 @@
                                     </div>
 
                                     <div class="statistic-number">
-                                        <p>78</p>
+                                        <p>0</p>
                                     </div>
                                 </div>
                                 

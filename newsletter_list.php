@@ -1,6 +1,11 @@
 <?php
 
+    session_start();
 
+    if (!isset($_SESSION['authenticated'])) {
+        header('Location: login.php');
+        exit;
+    }
     // Database information.
 
     $host = 'localhost';
@@ -33,7 +38,7 @@
     foreach($_POST as $key => $value) {
         if (strpos($key, 'delete') !== false) {
 
-            // We extract the id withouth the "delete".
+            // We extract the id without the "delete".
 
             $id = substr($key, 6);
             $query = "DELETE FROM newsletter WHERE id=$id";

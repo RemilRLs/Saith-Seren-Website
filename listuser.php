@@ -1,12 +1,18 @@
 <?php
-
-
+    session_start();
+    if (!isset($_SESSION['authenticated'])) {
+        header('Location: login.php');
+        exit;
+    }
     // Database information.
 
     $host = 'localhost';
     $dbName = 'saith';
     $username = 'root';
     $password = '';
+
+
+
 
     $db = mysqli_connect($host, $username, "", $dbName);
 

@@ -197,6 +197,19 @@
                     </div>
 
                     <div class="line"></div>
+                    <div class="bottom-dashboard">
+
+                            <form method="post" action="phpscript/logout.php">
+                                <div class="logout">
+                                    <button class="logout-button"><img src="ressources/icons/house icon.png" alt="house icon" class="house-icon"><p>Logout</p></button>
+                                </div>
+                            </form>
+
+                        
+
+                    </div>
+
+
                 </div>
                     
 

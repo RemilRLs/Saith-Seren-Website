@@ -200,6 +200,63 @@
 }
 
 
+.admin .admin-content .dashboard-square .bottom-dashboard{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+    margin-top: 200px;
+}
+
+.admin .admin-content .dashboard-square .bottom-dashboard .logout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 219px;
+    height: 56px;
+
+    background-color: #6B6B6B;
+    border: none;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+.admin .admin-content .dashboard-square .bottom-dashboard .logout button{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-weight: 600;
+    
+
+
+    cursor: pointer;
+}
+
+.admin .admin-content .dashboard-square .bottom-dashboard .logout button p{
+    margin-bottom: 8px;
+}
+
+.admin .admin-content .dashboard-square  .bottom-dashboard .logout img{
+    width: 24px;
+    height: 24px;
+
+    margin-right: 15px;
+
+}
+
 /* Calendar Form Styling. */
 
 .admin .admin-content .other-square {
@@ -279,3 +336,4 @@
 .admin .admin-content .other-square .list-event .event-edit label{
     margin-top: 90px;
 }
+

@@ -1,5 +1,5 @@
 /*     Multi language        */ 
-const langEl = document.querySelector('.langWrap');//bouton changment de langue 
+const langEl = document.querySelector('.langWrap'); // Button to change the language.
 const link = document.querySelectorAll('a'); // element
 
 const homeEl = document.querySelector('.home');//element

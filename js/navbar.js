@@ -24,10 +24,10 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
 
-  if (prevScrollpos > currentScrollPos) {
-        navShow.setAttribute('data-visible', false);
+  if (prevScrollpos > currentScrollPos) { // If the user scroll down the current will be lower than the previous one.
+        navShow.setAttribute('data-visible', false); // The navbar is not display.
   } else {
-        navShow.setAttribute('data-visible', true);
+        navShow.setAttribute('data-visible', true); // The navbar is display.
   } 
   prevScrollpos = currentScrollPos;
 }
