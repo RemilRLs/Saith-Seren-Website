@@ -67,7 +67,7 @@
 
     <script src="js/navbar.js" defer></script>
     <script src="js/pictures.js" defer></script>
-    <script src="js/about.js" defer></script>
+    <script src="js/switchlanguage.js" defer></script>
 
     <?php include 'phpscript/picture_element.php'; ?>
 
@@ -114,8 +114,8 @@
                                 </div>
 
                                 <ul  class="langWrap">
-                                    <li><a  href="#" class="translate " language='welsh'><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
-                                    <li><a  href="#" class="translate active" language='english'><img src="ressources/logo/united-kingdom.png">English</a></li>
+                                    <li><a  href="#" class="translate active welsh" language="welsh"><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
+                                    <li><a  href="#" class="translate english" language="english"><img src="ressources/logo/united-kingdom.png">English</a></li>
 
                                 </ul>     
                             </div>
@@ -164,7 +164,7 @@
 
                         <p class="descriptionSubscribe description-subscribe"> Become a member of Saith Seren for £10 a month, support us in our aim to promote Welsh language and culture</p>
                         <div class="box-subscribe-button">
-                            <button class="subscribeText subscribe-button" onclick="window.open('https://pay.gocardless.com/billing/static/flow?id=BRF0008R8KQ1C459KNRPTWDAYJ5M59B4', '_blank')">Subscribe</button>
+                            <button class="subscribeText2 subscribe-button" onclick="window.open('https://pay.gocardless.com/billing/static/flow?id=BRF0008R8KQ1C459KNRPTWDAYJ5M59B4', '_blank')">Subscribe</button>
                             
 
                         </div>
