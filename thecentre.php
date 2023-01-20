@@ -37,11 +37,11 @@
 
                         
                         <div class="menu-navigation-left">
-                            <li><a class="navbar-element home" href="#about">Home</a></li>
+                            <li><a class="navbar-element home" href="index.php">Home</a></li>
                             <li><a class="navbar-element margin calendar"  href="calendar.php">Calendar</a></li>
-                            <li><a class="navbar-element picture"  href="#pictures">Pictures</a></li>
+                            <li><a class="navbar-element picture"  href="index.php#pictures">Pictures</a></li>
                             <li><a class="navbar-element margin centre" href="thecentre.php">The Centre</a></li>
-                            <li><a class="navbar-element contact"  href="#contact">Contact</a></li>
+                            <li><a class="navbar-element contact"  href="index.php#contact">Contact</a></li>
                         </div>
 
                         <div  class="menu-navigation-right">

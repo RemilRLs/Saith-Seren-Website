@@ -67,8 +67,25 @@
     height: 272px;
     width: 419px;
 
+    opacity: 1;
+
+
 }
 
+
+.transitioning-post{
+    animation: slidein 1s;
+ }
+ 
+ @keyframes slidein {
+   from {
+     transform: translateX(10%);
+   }
+ 
+   to {
+     transform: translateX(0%);
+   }
+ }
 
 .pictures .pictures-content .pictures-square  .pictures-scroll .picture-choose{
     display: flex;

@@ -100,7 +100,7 @@
 
                 <div class="calendar-event">
                     <div class="month-event"> 
-                        <h1 class="month">January</h1>
+                        <h1 class="month">Events</h1>
                     </div> 
 
                     <div class="line"></div>

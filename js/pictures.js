@@ -9,6 +9,14 @@ const nextButton = document.querySelector(".arrow-right");
 let index = 0;
 
 
+// Every five seconds we switch of image.
+
+let intervalId = setInterval(() => {
+    nextButton.click();
+
+  }, 5000);
+
+
 function addImage(src, description, title){
     const img = document.createElement("img");
 
@@ -58,7 +66,17 @@ function showDescription(index){
     listDesc[index].classList.add("active");
 }
 
+
 previousButton.addEventListener("click", () => {
+
+    // We reset the interval.
+
+    clearInterval(intervalId);
+
+    intervalId = setInterval(() => {
+      nextButton.click();
+    }, 5000);
+
     index--;
 
     if(index < 0){
@@ -71,7 +89,18 @@ previousButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () =>{
+
+    // We reset the interval.
+
+    clearInterval(intervalId);
+
+    intervalId = setInterval(() => {
+      nextButton.click();
+    }, 5000);
+
     index++;
+
+    
 
     if(index >= listImages.length){
         index = 0;
@@ -80,6 +109,13 @@ nextButton.addEventListener("click", () =>{
     showImage(index);
     showTitle(index);
     showDescription(index);
+
+    listImages[index].classList.add("transitioning-post");
+
+
+    setTimeout(() => {
+        listImages[index].classList.remove("transitioning-post");
+    }, 1000);
 });
 
 

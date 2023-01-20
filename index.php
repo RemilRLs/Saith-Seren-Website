@@ -33,14 +33,14 @@
         // If there is already an email.
 
         if (mysqli_num_rows($result) == 1) {
-            $email_err = "You are already subscribe.";
+            $email_err = "You are already subscribed.";
         } else {
             // If everything is ok.
 
             $query = "INSERT INTO newsletter (email) VALUES ('$email')";
             $result = mysqli_query($db, $query);
 
-            $subscribe_confirmation = "You are now subscribe to the newsletter.";
+            $subscribe_confirmation = "You are now subscribed to the newsletter.";
         }
     }
 
