@@ -17,6 +17,13 @@ const descriptionSubscribeEl = document.querySelector('.descriptionSubscribe');/
 
 const subscribeNewsLetterEl = document.querySelector('.subscribeNewsLetter');//element 
 const descriptionSubscribeNewsLetterEl = document.querySelector('.descriptionSubscribeNewsLetter');//element 
+const readmoreEl = document.querySelector('.readmore');//element 
+
+const contactUsEl = document.querySelector('.contactUs');//element 
+
+
+
+
 
 
 link.forEach(el => {
@@ -40,6 +47,9 @@ link.forEach(el => {
 
         subscribeNewsLetterEl.textContent = data[attr].subscribeNewsLetter;
         descriptionSubscribeNewsLetterEl.textContent = data[attr].descriptionSubscribeNewsLetter;
+        readmoreEl.textContent = data[attr].readmore;
+
+        contactUsEl.textContent = data[attr].contactUs;
       
         
 
@@ -62,6 +72,9 @@ var data={
         
         "subscribeNewsLetter":"Subscribe to our Newsletter!",
         "descriptionSubscribeNewsLetter":"Subscribe to our newsletter to stay informed about news related to Welsh culture.",
+        "readmore":"Read More",
+
+        "contactUs":"Contact Us",
        
     },
     
@@ -80,6 +93,8 @@ var data={
         
         "subscribeNewsLetter":"Tanysgrifiwch i'n Cylchlythyr!",
         "descriptionSubscribeNewsLetter":"Tanysgrifiwch i'n cylchlythyr i gael gwybod am newyddion am ddiwylliant Cymru.",
+        "readmore":"Darllen Mwy",
+        "contactUs":"Cysylltwch â Ni"
        
     },
 };

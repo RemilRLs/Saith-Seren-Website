@@ -149,7 +149,7 @@
                             <p class="welshDescrip welsh-description">You are proud or interested in Welsh culture then you have come to the right place! Here<br> you will find all the information you need.</p>
 
 
-                            <button class="read-more readmore"> <img src="ressources/icons/arrow bottom.png" alt="arrow bottom icon" class="read-more-icon"> Read More</button>
+                            <button class="read-more  "> <img src="ressources/icons/arrow bottom.png" alt="arrow bottom icon" class="read-more-icon">  <div class="readmore">Read More</div> </button>
                         </div>
                     </div>
                     <div class="subscribe">
@@ -257,7 +257,7 @@
                 <div class="contact-content">
                     <div class="contact-square">
                         <div class="contact-address-information-square">
-                            <h1>Contact Us</h1>
+                            <h1 class="contactUs">Contact Us</h1>
 
                             <div class="contact-address">
                                 <div class="address">
@@ -292,9 +292,9 @@
                             <div class="opening-time-information">
 
                                 <div class="opening-time">
-                                    <h2>Opening Time</h2>
+                                    <h2 class="openingTime">Opening Time</h2>
 
-                                    <p>
+                                    <p class="opening">
                                         Open Monday through Friday<br>
                                         
                                         4:30 - 11:00<br>

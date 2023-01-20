@@ -21,6 +21,11 @@ const descriptionSubscribeEl = document.querySelector('.descriptionSubscribe');/
 const subscribeNewsLetterEl = document.querySelector('.subscribeNewsLetter');//element 
 const descriptionSubscribeNewsLetterEl = document.querySelector('.descriptionSubscribeNewsLetter');//element 
 
+const readmoreEl = document.querySelector('.readmore');//element 
+const contactUsEl = document.querySelector('.contactUs');//element
+const openingTimeEl = document.querySelector('.openingTime');//element
+const openingEl = document.querySelector('.opening');//element
+
 
 welsh.addEventListener('click', () => {
     
@@ -49,6 +54,13 @@ welsh.addEventListener('click', () => {
 
     subscribeNewsLetterEl.textContent = data[attr].subscribeNewsLetter;
     descriptionSubscribeNewsLetterEl.textContent = data[attr].descriptionSubscribeNewsLetter;
+
+    readmoreEl.textContent = data[attr].readmore;
+    contactUsEl.textContent = data[attr].contactUs;
+
+    openingTimeEl.textContent = data[attr].openingTime;
+    openingEl.textContent = data[attr].opening;
+      
 });
 
 english.addEventListener('click', () => {
@@ -76,6 +88,12 @@ english.addEventListener('click', () => {
 
     subscribeNewsLetterEl.textContent = data[attr].subscribeNewsLetter;
     descriptionSubscribeNewsLetterEl.textContent = data[attr].descriptionSubscribeNewsLetter;
+
+    readmoreEl.textContent = data[attr].readmore;
+    contactUsEl.textContent = data[attr].contactUs;
+
+    openingTimeEl.textContent = data[attr].openingTime;
+    openingEl.textContent = data[attr].opening;
 });
 
 
@@ -97,6 +115,11 @@ var data={
         "subscribeNewsLetter":"Subscribe to our Newsletter!",
         "descriptionSubscribeNewsLetter":"Subscribe to our newsletter to stay informed about news related to Welsh culture.",
        
+        "readmore":"Read More",
+        "contactUs":"Contact Us",
+
+        "openingTime":"Opening Time",
+        "opening":"Open Monday through Friday  4:30 - 11:00 Saturday until midnight"
     },
     
     "welsh": {
@@ -116,5 +139,9 @@ var data={
         "subscribeNewsLetter":"Tanysgrifiwch i'n Cylchlythyr!",
         "descriptionSubscribeNewsLetter":"Tanysgrifiwch i'n cylchlythyr i gael gwybod am newyddion am ddiwylliant Cymru.",
        
+        "readmore":"Darllen Mwy",
+        "contactUs":"Cysylltwch â Ni",
+        "openingTime":"Amser Agor",
+        "opening":"Ar agor o ddydd Llun i ddydd Gwener 4:30 - 11:00 dydd Sadwrn tan hanner nos",
     },
 };
