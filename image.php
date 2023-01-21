@@ -174,12 +174,12 @@
                     
                     <div class="image-more display-none" data-visible="false">
                             
-                            <a class="image block text-decoration" href="register.php">
+                            <a class="image block text-decoration" href="image.php">
                                 <img src="ressources/icons/add-user.png" alt="add image icon" class="add-image-icon icon-more">
                                 List Image
                             </a>
 
-                            <a class="user block text-decoration" href="listuser.php">
+                            <a class="user block text-decoration" href="addimage.php">
                                 <img src="ressources/icons/add-user.png" alt="add user icon" class="add-image-icon icon-more">
                                 Add Image
                             </a>

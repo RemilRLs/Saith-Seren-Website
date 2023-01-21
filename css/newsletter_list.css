@@ -1,0 +1,61 @@
+/* Styling Newsletter List. */
+
+.line-2{
+    border: 1px solid #676767;
+    width: 40%;
+}
+
+.admin .other-square .newsletter{
+    width: 100%;
+    
+
+}
+
+.admin .other-square .newsletter .title-section {
+    display: flex;
+
+}
+
+.admin .other-square .newsletter .title-section h4{
+    margin-right: 280px;
+}
+
+.admin .other-square  .newsletter form{
+    display: flex;
+    align-items: center;
+}
+
+.admin .other-square  .newsletter form input{
+    width: 100px;
+    height: 30px;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #098b04;
+    color: white;
+    font-weight: 600;
+
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+
+
+.admin .other-square  .newsletter .info-name{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+}
+
+.admin .other-square  .newsletter .delete-email{
+    background-color: #EF5656;
+    color: white;
+    font-weight: 600;
+
+    margin-left: 163px;
+
+    cursor: pointer;
+}
+

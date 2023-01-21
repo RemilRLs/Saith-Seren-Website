@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+
 .max-width{
     max-width: 1920px;
     padding: 0 5px;

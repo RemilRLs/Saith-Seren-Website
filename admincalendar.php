@@ -241,6 +241,40 @@
                     </div>
 
                     <div class="line"></div>
+
+                    <div class="image overview white">
+                        <button class="button-image text-decoration">
+                            <img src="ressources/icons/add image icon.png" alt="image icon" class="image-icon">
+                            <h3>Image</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
+                    </div>
+
+                    <div class="image-more display-none" data-visible="false">
+                            
+                            <a class="image block text-decoration" href="image.php">
+                                <img src="ressources/icons/add-user.png" alt="add image icon" class="add-image-icon icon-more">
+                                List Image
+                            </a>
+
+                            <a class="user block text-decoration" href="addimage.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-image-icon icon-more">
+                                Add Image
+                            </a>
+ 
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="bottom-dashboard">
+
+                            <form method="post" action="phpscript/logout.php">
+                                <div class="logout">
+                                    <button class="logout-button"><img src="ressources/icons/house icon.png" alt="house icon" class="house-icon"><p>Logout</p></button>
+                                </div>
+                            </form>
+
+                    </div>
                 </div>
 
                 <div class="other-square">

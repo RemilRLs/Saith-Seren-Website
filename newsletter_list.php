@@ -28,9 +28,13 @@
         $email = $row['email'];
 
         $formNewsletter .= "<form method='post' action=''>";
+        $formNewsletter .= "<div class='info-name'>";
         $formNewsletter .= "<p> $email </p>";
+        $formNewsletter .= "<p> #$id </p>";
+        $formNewsletter .= "</div>";
+        
 
-        $formNewsletter .= "<input type='submit' name='delete$id' value='Delete'>";
+        $formNewsletter .= "<input class='delete-email' type='submit' name='delete$id' value='Delete'>";
 
         $formNewsletter .= "</form>";
     }
@@ -65,6 +69,7 @@
     <link rel="shortcut icon" type="image/png" href="ressources/logo/Saith Seren Logo.png"/>
     
     <link rel="stylesheet" type="text/css" href="css/admin.css"/>
+    <link rel="stylesheet" type="text/css" href="css/newsletter_list.css"/>
 
     <script src="js/dashboard.js" defer></script>
 
@@ -178,14 +183,60 @@
                     </div>
 
                     <div class="line"></div>
+
+                    <div class="image overview white">
+                        <button class="button-image text-decoration">
+                            <img src="ressources/icons/add image icon.png" alt="image icon" class="image-icon">
+                            <h3>Image</h3>
+                            <img src="ressources/icons/arrow bottom 2.png" alt="arrow bottom icon" class="arrow-bottom-icon">
+                        </button>
+                    </div>
+
+                    <div class="image-more display-none" data-visible="false">
+                            
+                            <a class="image block text-decoration" href="image.php">
+                                <img src="ressources/icons/add-user.png" alt="add image icon" class="add-image-icon icon-more">
+                                List Image
+                            </a>
+
+                            <a class="user block text-decoration" href="addimage.php">
+                                <img src="ressources/icons/add-user.png" alt="add user icon" class="add-image-icon icon-more">
+                                Add Image
+                            </a>
+ 
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="bottom-dashboard">
+
+                            <form method="post" action="phpscript/logout.php">
+                                <div class="logout">
+                                    <button class="logout-button"><img src="ressources/icons/house icon.png" alt="house icon" class="house-icon"><p>Logout</p></button>
+                                </div>
+                            </form>
+
+                    </div>
                 </div>
                     
 
                 <div class="other-square">
                     <div class="newsletter">
-                    <?php echo $formNewsletter; ?> 
-                        
+                        <div class="title-section"> 
+                                <h4>Email</h4>
+                                <h4>Manage </h4>
+
+                        </div>
+
+                        <div class="line-2"></div>
+
                     
+                        <?php echo $formNewsletter; ?> 
+                        
+                    <form action="phpscript/export_emails.php" method="post">
+                        <input class="export" type="submit" value="Export Emails" name="export_emails_btn">
+                    </form>
+
                     </div>
                 </div>
             </div>
