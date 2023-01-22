@@ -14,7 +14,7 @@
 
 
     <script src="js/navbar.js" defer></script>
-    <script src="js/switchlanguage.js" defer></script>
+    <script src="js/switchlanguageCentre.js" defer></script>
 
 
 </head>
@@ -59,7 +59,7 @@
                                     <a>Welsh</a>
                                 </div>
 
-                                <ul>
+                                <ul class="langWrap">
                                     <li><a href="#" class="translate active welsh" language="welsh"><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
                                     <li><a href="#" class="translate english" language="english"><img src="ressources/logo/united-kingdom.png">English</a></li>
 
@@ -83,17 +83,15 @@
 
                     <div class="circle"> </div>
                     <div class="square-welsh-centre">
-                        <h3>Welsh Centre</h3>
+                        <h3 class="Centre">Welsh Centre</h3>
 
-                        <p class="aboutCentre">The intention is to provide a focus for Welsh speakers, learners and supporters of the language and culture. 
-
-                            There are many events including Welsh and English entertainment, Welsh lessons or a leisurely time with friends.
+                        <p class="aboutCentre">The intention is to provide a focus for Welsh speakers, learners and supporters of the language and culture. There are many events including Welsh and English entertainment, Welsh lessons or a leisurely time with friends.
                         </p>
                     </div>
                     
                     <div class="square-rent-room ">
                         <div class="rent-room-business flex-rent square ">
-                            <h3 class="rentARorm">Rent a room</h3>
+                            <h3 class="rentRoom">Rent a room</h3>
 
                             <div class="business-rent-square flex-rent padding-square">
                                 <div class="title-business flex-rent">
@@ -103,7 +101,7 @@
                                 
                                 <div class="price-rent flex-rent">
                                     <p class="pound">£ 10 </p>
-                                    <p class="hour"> / hour</p>
+                                    <p class="hour">/ hour</p>
                                 </div>
 
                                 <div class="line"></div>
@@ -126,12 +124,12 @@
 
                             <div class="title-charity flex-rent">
                                 <img src="ressources/icons/fire.png" alt="business icon" class="business-icon main-icon">
-                                <p>Charities</p>
+                                <p class="charitie">Charities</p>
                             </div>
                             
                             <div class="price-rent flex-rent">
                                 <p class="pound">£ 5 </p>
-                                <p class="hour"> / hour</p>
+                                <p class="hour2"> / hour</p>
                             </div>
 
                             <div class="line"></div>

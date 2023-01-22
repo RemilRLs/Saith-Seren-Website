@@ -67,7 +67,7 @@
 
     <script src="js/navbar.js" defer></script>
     <script src="js/pictures.js" defer></script>
-    <script src="js/switchlanguage.js" defer></script>
+    <script src="js/switchlanguageIndex.js" defer></script>
 
     <?php include 'phpscript/picture_element.php'; ?>
 

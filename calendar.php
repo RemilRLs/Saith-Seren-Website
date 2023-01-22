@@ -17,6 +17,7 @@
 
     <script src="js/navbar.js" defer></script>
     <script src="js/calendar.js " defer></script>
+    <script src="js/switchlanguageCalendar.js " defer></script>
 
     <?php include 'phpscript/calendar_event.php'; ?>
 
@@ -39,15 +40,15 @@
 
                         
                         <div class="menu-navigation-left">
-                            <li><a class="navbar-element" href="index.php">Home</a></li>
-                            <li><a class="navbar-element margin" href="#calendar">Calendar</a></li>
-                            <li><a class="navbar-element" href="index.php#pictures">Pictures</a></li>
-                            <li><a class="navbar-element margin" href="thecentre.php">The Centre</a></li>
-                            <li><a class="navbar-element" href="index.php#contact">Contact</a></li>
+                        <li><a class="navbar-element home" href="index.php">Home</a></li>
+                            <li><a class="navbar-element margin calendar"  href="calendar.php">Calendar</a></li>
+                            <li><a class="navbar-element picture"  href="index.php#pictures">Pictures</a></li>
+                            <li><a class="navbar-element margin centre" href="thecentre.php">The Centre</a></li>
+                            <li><a class="navbar-element contact"  href="index.php#contact">Contact</a></li>
                         </div>
 
                         <div  class="menu-navigation-right">
-                            <li><a class="navbar-element-right subscribe" href="#">Subscribe</a></li>
+                            <li><a class="navbar-element-right subscribe subscribeText" href="#">Subscribe</a></li>
 
                             <!-- Section for choosing a language. -->
 
@@ -61,9 +62,9 @@
                                     <a>Welsh</a>
                                 </div>
 
-                                <ul>
-                                    <li><a class="wl"><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
-                                    <li><a class="en"><img src="ressources/logo/united-kingdom.png">English</a></li>
+                                <ul class="langWrap">
+                                    <li><a href="#" class="translate active welsh" language="welsh"><img src="ressources/logo/united-kingdom.png">Welsh</a></li>
+                                    <li><a href="#" class="translate english" language="english"><img src="ressources/logo/united-kingdom.png">English</a></li>
 
                                 </ul>   
                             </div>
@@ -94,13 +95,13 @@
 
             <div class="calendar-content">
                 <div class="calendar-title">
-                    <h1>Event <br>Calendar</h1>
+                    <h1><div class="event">Event</div>  <br> <div class="calendar2">Calendar</div> </h1>
                 </div>
 
 
                 <div class="calendar-event">
                     <div class="month-event"> 
-                        <h1 class="month">Events</h1>
+                        <h1 class="month events">Events</h1>
                     </div> 
 
                     <div class="line"></div>

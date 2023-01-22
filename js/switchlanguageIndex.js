@@ -29,13 +29,7 @@ const contactUsEl = document.querySelector('.contactUs');//element
 const openingTimeEl = document.querySelector('.openingTime');//element
 const openingEl = document.querySelector('.opening');//element
 
-/*thecentre.php */
-const aboutCentreEl = document.querySelector('.aboutCentre');//element
-const rentARoomEl=document.querySelector('.rentARoom');//element
-const businessEl=document.querySelector('.business');//element
-const hourEl=document.querySelector('.hour');//element
-const fullDetailEl=document.querySelector('.fullrDetail');//element
-const fullDetailEl2=document.querySelector('.fullrDetail2');//element
+
 
 
 welsh.addEventListener('click', () => {
@@ -72,13 +66,7 @@ welsh.addEventListener('click', () => {
     openingTimeEl.textContent = data[attr].openingTime;
     openingEl.textContent = data[attr].opening;
 
-    aboutCentreEl.textContent = data[attr].aboutCentre;
-    rentARoomEl.textContent = data[attr].rentARoom;
-    businessEl.textContent = data[attr].business;
-    hourEl.textContent=data[attr].hour;
-    fullDetailEl.textContent=data[attr].hourDetail;
-    fullDetailEl2.textContent=data[attr].hourDetail2;
-      
+ 
 });
 
 english.addEventListener('click', () => {
@@ -113,12 +101,7 @@ english.addEventListener('click', () => {
     openingTimeEl.textContent = data[attr].openingTime;
     openingEl.textContent = data[attr].opening;
 
-    aboutCentreEl.textContent = data[attr].aboutCentre;
-    rentARoomEl.textContent = data[attr].rentARoom;
-    businessEl.textContent = data[attr].business;
-    hourEl.textContent=data[attr].hour;
-    fullDetailEl.textContent=data[attr].hourDetail;
-    fullDetailEl2.textContent=data[attr].hourDetail2;
+ 
 });
 
 
@@ -135,7 +118,7 @@ var data={
         "title" :"Welsh Culture",
         "welshDescrip":"You are proud or interested in Welsh culture then you have come to the right place! Here",
         "subscribeSupport":"Support Us",
-        "descriptionSubscribe":" Become a member of Saith Seren for £10 a month, support us in our aim to promote Welsh language and culture",
+        "descriptionSubscribe":"Become a member of Saith Seren for £10 a month, support us in our aim to promote Welsh language and culture",
         
         "subscribeNewsLetter":"Subscribe to our Newsletter!",
         "descriptionSubscribeNewsLetter":"Subscribe to our newsletter to stay informed about news related to Welsh culture.",
@@ -146,12 +129,7 @@ var data={
         "openingTime":"Opening Time",
         "opening":"Open Monday through Friday  4:30 - 11:00 Saturday until midnight",
         
-        "aboutCentre":"The intention is to provide a focus for Welsh speakers, learners and supporters of the language and culture. There are many events including Welsh and English entertainment, Welsh lessons or a leisurely time with friends.",
-        "rentARoom":"Rent a room",
-        "business":"Business",
-        "hour":"/ hour",
-        "fullDetail":"Full Details",
-        "fullDetail2":"Full Details",
+       
     },
     
     "welsh": {
@@ -176,12 +154,7 @@ var data={
         "openingTime":"Amser Agor",
         "opening":"Ar agor o ddydd Llun i ddydd Gwener 4:30 - 11:00 dydd Sadwrn tan hanner nos",
         
-        "aboutCentre":"Y bwriad yw rhoi ffocws i siaradwyr Cymraeg, dysgwyr a chefnogwyr yr iaith a diwylliant. Mae llawer o ddigwyddiadau gan gynnwys adloniant Cymraeg a Saesneg, gwersi Cymraeg neu amser hamddenol gyda ffrindiau.",
-        "rentARoom":"Rhentu ystafell",
-        "business":"Busnes",
-        "hour":"/ awr",
-        "fullDetail":"Manylion Llawn",
-        "fullDetail2":"Manylion Llawn",
+       
     
     
     },
