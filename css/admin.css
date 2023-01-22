@@ -156,11 +156,6 @@
     margin-right: 20px;
 }
 
-.admin .admin-content .dashboard-square .newsletter-more img{
-    width: 30px;
-    height: 30px;
-}
-
 
 .admin .admin-content .dashboard-square .calendar .calendar-icon{
     width: 26px;
@@ -172,9 +167,8 @@
 
 
 .admin .admin-content .dashboard-square .block{
-    display: block;
+    display: flex;
 
-    align-items: center;
     text-align: center;
     justify-content: center;
 
@@ -358,6 +352,12 @@
 
 /* Responsive Dashboard */
 
+@media (max-width: 1112px){
+    .admin .admin-content .dashboard-square .bottom-dashboard .logout{
+        width: 168px;
+    }
+}
+
 @media (max-width: 1045px){
 
     .admin .admin-content .dashboard-square .overview h3{
@@ -414,7 +414,6 @@
     }
 
     .admin .admin-content .dashboard-square .overview{
-        justify-content: flex-start;
 
         margin-top: 10px;
     }
@@ -444,10 +443,50 @@
 
     .admin .admin-content .dashboard-square{
         height: 80%;
-        width: 45px;
+        width: 60px;
     }
 
     .admin .admin-content .dashboard-square .overview-more .notification-icon{
-        
+        margin-left: 0px;
+    }
+
+    .admin .admin-content .dashboard-square .overview-more a{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .admin .admin-content .dashboard-square .icon-more{
+        margin-right: 0px;
+    }
+
+    .admin .admin-content .dashboard-square{
+        display: block;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .admin .admin-content .dashboard-square .overview button{
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+    }
+
+    .admin .admin-content .dashboard-square .overview .diag-icon{
+        padding-right: 0px;
+    }
+
+    .admin .admin-content .dashboard-square .calendar .calendar-icon{
+        margin-right: 0px;
+    }
+
+    .admin .admin-content .dashboard-square .image .image-icon{
+        margin-right: 0px;
+    }
+
+    .admin .admin-content .dashboard-square .block{
+        display: block;
     }
 }

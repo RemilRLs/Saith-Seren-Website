@@ -27,10 +27,12 @@ buttonToggle.addEventListener('click', () => { // We listen if there is a click 
         calendar.setAttribute('data-visible', false);
         newsletter.setAttribute('data-visible', false);
         user.setAttribute('data-visible', false);
+        image.setAttribute('data-visible', false);
 
         divNewlsetterHeading.classList.remove('white-text');
         divCalendarHeading.classList.remove('white-text');
         divUserHeading.classList.remove('white-text');
+        divImageHeading.classList.remove('white-text');
     }   
     else{
         overview.setAttribute('data-visible', false);
@@ -48,10 +50,12 @@ buttonToggleNewsletter.addEventListener('click', () => { // We listen if there i
         calendar.setAttribute('data-visible', false);
         user.setAttribute('data-visible', false);
         overview.setAttribute('data-visible', false);
+        image.setAttribute('data-visible', false);
 
         divOverviewHeading.classList.remove('white-text');
         divCalendarHeading.classList.remove('white-text');
         divUserHeading.classList.remove('white-text');
+        divImageHeading.classList.remove('white-text');
     }   
     else{
         newsletter.setAttribute('data-visible', false);
@@ -70,10 +74,12 @@ buttonToggleCalendar.addEventListener('click', () => { // We listen if there is 
         user.setAttribute('data-visible', false);
         newsletter.setAttribute('data-visible', false);
         overview.setAttribute('data-visible', false);
+        image.setAttribute('data-visible', false);
 
         divNewlsetterHeading.classList.remove('white-text');
         divOverviewHeading.classList.remove('white-text');
         divUserHeading.classList.remove('white-text');
+        divImageHeading.classList.remove('white-text');
     }   
     else{
         calendar.setAttribute('data-visible', false);
@@ -91,10 +97,12 @@ buttonToggleUser.addEventListener('click', () => { // We listen if there is a cl
         calendar.setAttribute('data-visible', false);
         newsletter.setAttribute('data-visible', false);
         overview.setAttribute('data-visible', false);
+        image.setAttribute('data-visible', false);
 
         divNewlsetterHeading.classList.remove('white-text');
         divOverviewHeading.classList.remove('white-text');
         divCalendarHeading.classList.remove('white-text');
+        divImageHeading.classList.remove('white-text');
     }   
     else{
         user.setAttribute('data-visible', false);
@@ -121,11 +129,9 @@ buttonToggleImage.addEventListener('click', () =>{
         divOverviewHeading.classList.remove('white-text');
         divCalendarHeading.classList.remove('white-text');
         divUserHeading.classList.remove('white-text');
-        console.log("JE PASSE A TRUE");
     }
     else{
 
-        console.log("JE PASSE A FALSE");
         image.setAttribute('data-visible', false);
         divImageHeading.classList.remove('white-text');
     }

@@ -82,11 +82,11 @@
                             
                         <a class="statistic block text-decoration "  href="statistic.php">
                             <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
-                            Statistic
+                            <p>Statistic</p>
                         </a>
                         <a class="notification block text-decoration " href="#">
                             <img src="ressources/icons/notification icon.png" alt="notification icon" class="notification-icon icon-more">
-                            Notification
+                            <p>Notification</p>
                         </a>
                     </div>
                     
@@ -105,7 +105,7 @@
                             
                             <a class="subscriber block text-decoration" href="newsletter_list.php">
                                 <img src="ressources/icons/user icon.png" alt="user icon" class="user-icon icon-more">
-                                Subscriber
+                                <p>Subscriber</p>
                             </a>
  
                     </div>
@@ -126,12 +126,12 @@
                             
                             <a class="calendar block text-decoration" href="admin.php">
                                 <img src="ressources/icons/add event icon.png" alt="add event icon" class="add-event-icon icon-more">
-                                Add Event
+                                <p>Add Event</p>
                             </a>
 
                             <a class="calendar block text-decoration" href="admincalendar.php">
                                 <img src="ressources/icons/event.png" alt="event icon" class="event-icon icon-more">
-                                List Event
+                                <p>List Event</p>
                             </a>
  
                     </div>
@@ -150,12 +150,12 @@
                             
                             <a class="user block text-decoration" href="register.php">
                                 <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
-                                Add User
+                                <p>Add User</p>
                             </a>
 
                             <a class="user block text-decoration" href="listuser.php">
                                 <img src="ressources/icons/add-user.png" alt="add user icon" class="add-user-icon icon-more">
-                                List User
+                                <p>List User</p>
                             </a>
  
                     </div>
@@ -170,23 +170,31 @@
                         </button>
                     </div>
 
-
-                    
                     <div class="image-more display-none" data-visible="false">
                             
                             <a class="image block text-decoration" href="image.php">
                                 <img src="ressources/icons/add-user.png" alt="add image icon" class="add-image-icon icon-more">
-                                List Image
+                                <p>List Image</p>
                             </a>
 
                             <a class="user block text-decoration" href="addimage.php">
                                 <img src="ressources/icons/add-user.png" alt="add user icon" class="add-image-icon icon-more">
-                                Add Image
+                                <p>Add Image</p>
                             </a>
  
                     </div>
 
                     <div class="line"></div>
+
+                    <div class="bottom-dashboard">
+
+                            <form method="post" action="phpscript/logout.php">
+                                <div class="logout">
+                                    <button class="logout-button"><img src="ressources/icons/house icon.png" alt="house icon" class="house-icon"><p>Logout</p></button>
+                                </div>
+                            </form>
+
+                    </div>
                 </div>
 
                 <div class="other-square">
