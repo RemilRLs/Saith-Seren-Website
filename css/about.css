@@ -130,6 +130,11 @@
 
 }
 
+.about .about-content .square-about .welsh-culture .square-information-welsh .read-more a{
+    text-decoration: none;
+    color: black;
+}
+
 /* We had the button on the left of the button. */
 
 .about .about-content .square-about .welsh-culture .square-information-welsh .read-more-icon{

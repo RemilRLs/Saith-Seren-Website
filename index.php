@@ -149,7 +149,7 @@
                             <p class="welshDescrip welsh-description">You are proud or interested in Welsh culture then you have come to the right place! Here<br> you will find all the information you need.</p>
 
 
-                            <button class="read-more  "> <img src="ressources/icons/arrow bottom.png" alt="arrow bottom icon" class="read-more-icon">  <div class="readmore">Read More</div> </button>
+                            <button class="read-more  "> <img src="ressources/icons/arrow bottom.png" alt="arrow bottom icon" class="read-more-icon">  <div class="readmore"><a href="#newsletter"> Read More</a> </div> </button>
                         </div>
                     </div>
                     <div class="subscribe">

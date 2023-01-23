@@ -34,7 +34,7 @@ const openingEl = document.querySelector('.opening');//element
 
 welsh.addEventListener('click', () => {
     
-    selectionLangList.innerHTML = '<img src="ressources/logo/united-kingdom.png"> <a>Welsh</a>';
+    selectionLangList.innerHTML = '<img src="ressources/icons/wales.png"> <a>Welsh</a>';
     welsh.classList.add('active');
     english.classList.remove('active');
 
