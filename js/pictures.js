@@ -3,8 +3,12 @@ const textContainer = document.querySelector(".description-picture");
 const listImages = [];
 const listTitle = [];
 const listDesc = [];
+const listDot = [];
+
 const previousButton = document.querySelector(".arrow-left");
 const nextButton = document.querySelector(".arrow-right");
+
+const dotPicture = document.querySelector(".picture-dot");
 
 let index = 0;
 
@@ -38,7 +42,10 @@ function addImage(src, description, title){
     listDesc.push(p);
 
 
-
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    dotPicture.appendChild(dot);
+    listDot.push(dot);
 
     
 }
@@ -66,6 +73,14 @@ function showDescription(index){
     listDesc[index].classList.add("active");
 }
 
+function showDot(index){
+    listDot.forEach(dot =>{
+        dot.classList.remove("active");
+    });
+
+    listDot[index].classList.add("active");
+}
+
 
 previousButton.addEventListener("click", () => {
 
@@ -86,6 +101,7 @@ previousButton.addEventListener("click", () => {
     showImage(index);
     showTitle(index);
     showDescription(index);
+    showDot(index);
 });
 
 nextButton.addEventListener("click", () =>{
@@ -109,6 +125,7 @@ nextButton.addEventListener("click", () =>{
     showImage(index);
     showTitle(index);
     showDescription(index);
+    showDot(index);
 
     listImages[index].classList.add("transitioning-post");
 
@@ -126,4 +143,5 @@ addImage("ressources/images/twitter.png", "Ceci est un grand test", "BLABLABLABL
 showImage(index);
 showTitle(index);
 showDescription(index);
+showDot(index);
 

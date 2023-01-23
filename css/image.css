@@ -1,0 +1,50 @@
+/*  Styling Image Form (Add Image, Add Image to Carousel) */
+.admin .other-square .image form{
+    display: block;
+}
+
+.admin .other-square .image form input{
+    margin-bottom: 20px;
+}
+
+
+.admin .other-square .image form .upload-image{
+    background-color: #EF5656;
+    color: white;
+    font-weight: 600;
+
+    border: none;
+    width: 150px;
+    height: 50px;
+
+    cursor: pointer;
+}
+
+
+.admin .other-square .image form .choosen-image{
+
+    padding-top: 20px;
+
+}
+
+.admin .other-square .add-image form{
+    display: block;
+
+}
+
+.admin .other-square .add-image form input{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.admin .other-square .add-image form .add-image-conf{
+    background-color: #EF5656;
+    color: white;
+    font-weight: 600;
+
+    border: none;
+    width: 150px;
+    height: 50px;
+
+    cursor: pointer;
+}

@@ -116,12 +116,12 @@
 
                     <div class="overview-more display-none" data-visible="false">
                             
-                        <a class="statistic block text-decoration "  href="statistic.php">
-                            <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
+                    <a class="statistic block text-decoration "  href="statistic.php">
+                            <img src="ressources/icons/graph bar icon.png" alt="stat icon" class="stat-icon icon-more">
                             <p>Statistic</p>
                         </a>
                         <a class="notification block text-decoration " href="#">
-                            <img src="ressources/icons/notification icon.png" alt="notification icon" class="notification-icon icon-more">
+                            <img src="ressources/icons/download icon.png" alt="notification icon" class="notification-icon icon-more">
                             <p>Notification</p>
                         </a>
                     </div>

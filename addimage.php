@@ -92,7 +92,7 @@
     <link rel="shortcut icon" type="image/png" href="ressources/logo/Saith Seren Logo.png"/>
     
     <link rel="stylesheet" type="text/css" href="css/admin.css"/>
-    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="css/image.css"/>
 
     <script src="js/dashboard.js" defer></script>
 
@@ -126,11 +126,11 @@
                     <div class="overview-more display-none" data-visible="false">
                             
                         <a class="statistic block text-decoration "  href="statistic.php">
-                            <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
+                            <img src="ressources/icons/graph bar icon.png" alt="stat icon" class="stat-icon icon-more">
                             <p>Statistic</p>
                         </a>
                         <a class="notification block text-decoration " href="#">
-                            <img src="ressources/icons/notification icon.png" alt="notification icon" class="notification-icon icon-more">
+                            <img src="ressources/icons/download icon.png" alt="notification icon" class="notification-icon icon-more">
                             <p>Notification</p>
                         </a>
                     </div>
@@ -245,23 +245,24 @@
                 <div class="other-square">
                     <div class="add-image"> 
                         
-                    <div class="flex"> 
+                    <div class="block"> 
                         <form class="picture-add-form"  method="post" action="addimage.php" enctype="multipart/form-data">
-
+                            <h3>Add a new image to the Carousel</h3>
                             <label class=space-between" for="title" style="margin-right: 135px;">Title: </label><br>
                             <input type="text" id="titlePicture" name="titlePicture"><br>
 
 
-
-                            <label class=space-between" for="description" style="">Description: </label>
+                            <div class="test">
+                            <label class=space-between" for="description" style="">Description: </label><br>
                             <textarea id="descPicture" name="descPicture"></textarea><br>
+                            </div>
 
                             
                             <label class=space-between" for="picture" style="">Image: </label><br>
                             <input type="file" name="image" accept="image/*"><br>
 
 
-                            <input type="submit" value="Add Image">
+                            <input class="add-image-conf" type="submit" value="Add Image">
                         
                         </form>
 

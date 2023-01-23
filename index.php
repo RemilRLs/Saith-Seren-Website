@@ -230,10 +230,10 @@
                     <div class="pictures-scroll">
                         <div class="picture-choose">
                             <button> <img src="ressources/icons/arrow left.png" alt="arrow left" class="arrow-left"></button>
+                            
+                            <div class="picture-dot">
 
-                            <button>01</button>
-                            <button>02</button>
-                            <button>03</button>
+                            </div>
 
                             <button><img src="ressources/icons/arrow right.png" alt="arrow right" class="arrow-right"> </button>
                         </div>

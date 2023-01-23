@@ -61,19 +61,24 @@
 
             // We extract the id withouth the "edit".
             $id = substr($key, 4);
+            $query = "SELECT * FROM calendar_events WHERE id=$id";
+            $result = mysqli_query($db, $query);
+
+            $event_info = mysqli_fetch_assoc($result);
+            
 
             $formEdit .= "<label class='space-between' for='event-title' style='margin-right: 135px;'> Title: </label><br>";
             $formEdit .= "<input type='hidden' name='id' value='$id'>";
-            $formEdit .= "<input type='text' id='eventTitle' name='eventTitle'><br>";
+            $formEdit .= "<input type='text' id='eventTitle' name='eventTitle' value='".$event_info['event_title']."'><br>";
 
             $formEdit .= "<label class='space-between' for='event-date' style='margin-right: 135px;'> Date: </label><br>";
-            $formEdit .= "<input type='text' id='eventDate' name='eventDate'><br>";
+            $formEdit .= "<input type='text' id='eventDate' name='eventDate' value='".$event_info['event_date']."'><br>";
 
             $formEdit .= "<label class='space-between' for='event-desc' style='margin-right: 135px;'> Description: </label><br>";
-            $formEdit .= "<textarea id='eventDesc' name='eventDesc'></textarea><br>";
+            $formEdit .= "<textarea id='eventDesc' name='eventDesc'>".$event_info['event_description']."</textarea><br>";
 
             $formEdit .= "<label class='space-between' for='event-hour' style='margin-hour: 135px;'> Hour: </label><br>";
-            $formEdit .= "<input type='input' id='eventHour' name='eventHour'><br>";
+            $formEdit .= "<input type='input' id='eventHour' name='eventHour' value='".$event_info['event_hour']."'><br>";
     
             $formEdit .= "<input type='submit' name='confirm' value='Confirm'>";
         }
@@ -97,7 +102,7 @@
         }
         if(!empty($_POST['eventDesc'])){
             $desc = $_POST['eventDesc'];
-            $query .= "event_desc = '$desc', ";
+            $query .= "event_description = '$desc', ";
         }
         if(!empty($_POST['eventHour'])){
             $hour = $_POST['eventHour'];
@@ -160,12 +165,12 @@
 
                     <div class="overview-more display-none" data-visible="false">
                             
-                        <a class="statistic block text-decoration "  href="statistic.php">
-                            <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
+                    <a class="statistic block text-decoration "  href="statistic.php">
+                            <img src="ressources/icons/graph bar icon.png" alt="stat icon" class="stat-icon icon-more">
                             <p>Statistic</p>
                         </a>
                         <a class="notification block text-decoration " href="#">
-                            <img src="ressources/icons/notification icon.png" alt="notification icon" class="notification-icon icon-more">
+                            <img src="ressources/icons/download icon.png" alt="notification icon" class="notification-icon icon-more">
                             <p>Notification</p>
                         </a>
                     </div>

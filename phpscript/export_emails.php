@@ -19,19 +19,23 @@
 
         $db = mysqli_connect($host, $username, "", $dbName);
         $query = "SELECT email FROM newsletter";
-
+    
         $result = mysqli_query($db, $query);
-
-        // We create a new txt file.
-
-        $file = fopen("../data/emails_list.txt", "w") or die("Unable to open file!");
-
+        $emails = '';
+        
         while($row = mysqli_fetch_assoc($result)){
-            fwrite($file, $row['email'] . "\n");
+            $emails .= $row['email'] . "\n";
         }
 
-        header("Location: ../newsletter_list.php");
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=emails_list.txt');
+
+        echo $emails;
+
+        exit;
     }
+
+    header("Location: ../newsletter_list.php");
 
 
 ?>

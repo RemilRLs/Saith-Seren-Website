@@ -1,0 +1,37 @@
+/* Styling List User. */
+
+
+.line-2{
+    border: 1px solid #676767;
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+.admin .other-square .user-info{
+    display: flex;
+}
+
+.admin .other-square .user-info input{
+    background-color: #EF5656;
+    color: white;
+    font-weight: 600;
+
+    border: none;
+    border-radius: 10px;
+
+    width: 100px;
+    height: 30px;
+
+    margin-left: 163px;
+
+    cursor: pointer;
+}
+
+.admin .other-square  .user-info form{
+    display: flex;
+    align-items: center;
+}
+
+.admin .other-square .user-info p {
+    width: 140px;
+}

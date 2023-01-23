@@ -242,6 +242,10 @@
     display: flex;
 }
 
+.navbar .menu-navigation .centre{
+    width: 117px;
+}
+
 /* Styling when we put the mouse over the language desired. */
 
 .lang-menu ul li a:before{

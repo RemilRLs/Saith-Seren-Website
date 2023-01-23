@@ -47,7 +47,7 @@
     <link rel="shortcut icon" type="image/png" href="ressources/logo/Saith Seren Logo.png"/>
     
     <link rel="stylesheet" type="text/css" href="css/admin.css"/>
-    <link rel="stylesheet" type="text/css" href="css/register.css"/>
+    <link rel="stylesheet" type="text/css" href="css/image.css"/>
 
     <script src="js/dashboard.js" defer></script>
 
@@ -80,12 +80,12 @@
 
                     <div class="overview-more display-none" data-visible="false">
                             
-                        <a class="statistic block text-decoration "  href="statistic.php">
-                            <img src="ressources/icons/stat icon.png" alt="stat icon" class="stat-icon icon-more">
+                    <a class="statistic block text-decoration "  href="statistic.php">
+                            <img src="ressources/icons/graph bar icon.png" alt="stat icon" class="stat-icon icon-more">
                             <p>Statistic</p>
                         </a>
                         <a class="notification block text-decoration " href="#">
-                            <img src="ressources/icons/notification icon.png" alt="notification icon" class="notification-icon icon-more">
+                            <img src="ressources/icons/download icon.png" alt="notification icon" class="notification-icon icon-more">
                             <p>Notification</p>
                         </a>
                     </div>
@@ -201,8 +201,9 @@
                     <div class="image"> 
 
                     <form action="image.php" method="post" enctype="multipart/form-data">
-                        <input type="file" name="image" accept="image/*"><br>
-                        <input type="submit" value="Upload">
+                        <label for="image">Select an image to upload into the image folder (jpg, png, gif):</label><br><br>
+                        <input class="choosen-image" type="file" name="image" accept="image/*"><br>
+                        <input class="upload-image" type="submit" value="Upload">
                     </form>
 
                    </div>
